@@ -1,0 +1,10 @@
+# Replace helmet slot
+
+scoreboard players operation @a Failures = @e[tag=Main] Failures
+
+replaceitem entity @a[score_Failures_min=0,score_Failures=0] slot.armor.head minecraft:chainmail_helmet 1 0 {ench:[{lvl:1s,id:10s}],display:{LocName:"Circlet of the Gods",Lore:["You who wear this have", "been chosen by the Gods."]},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:0,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
+replaceitem entity @a[score_Failures_min=1,score_Failures=1] slot.armor.head minecraft:chainmail_helmet 1 0 {ench:[{lvl:1s,id:10s}],display:{LocName:"Circlet of the Gods",Lore:["You are not as trustworthy", "as we would have hoped."]},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-4,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
+replaceitem entity @a[score_Failures_min=2,score_Failures=2] slot.armor.head minecraft:chainmail_helmet 1 0 {ench:[{lvl:1s,id:10s}],display:{LocName:"Circlet of the Gods",Lore:["You failed us again.", "Reckless. Unruly.", "Insubordinate. Heathen."]},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-8,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
+replaceitem entity @a[score_Failures_min=3,score_Failures=3] slot.armor.head minecraft:chainmail_helmet 1 0 {ench:[{lvl:1s,id:10s}],display:{LocName:"Circlet of the Gods",Lore:["Playing games with us will", "cost your heart and soul."]},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-12,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
+replaceitem entity @a[score_Failures_min=4,score_Failures=4] slot.armor.head minecraft:chainmail_helmet 1 0 {ench:[{lvl:1s,id:10s}],display:{LocName:"Circlet of the Gods",Lore:["Wrath of the Gods", "be upon you."]},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-16,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
+kill @a[score_Failures_min=5,score_Failures=5]
