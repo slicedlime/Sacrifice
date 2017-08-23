@@ -1,5 +1,3 @@
-# -189 90 262
-
 stats entity @e[tag=Main] set QueryResult @s Time
 scoreboard players add @e[tag=Main] Time 0
 execute @e[tag=Main] ~ ~ ~ time query daytime
@@ -8,7 +6,7 @@ function praise:newgoal if @e[tag=Main,score_Time=0]
 
 execute @e[tag=Current] ~ ~ ~ title @a actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
 
-execute @e[type=item,x=-189,y=90,z=262,r=2] ~ ~ ~ function praise:sacrifice
+execute @e[tag=Main] ~ ~ ~ execute @e[type=item,r=2] ~ ~ ~ function praise:sacrifice
 
 scoreboard players operation @a Failures -= @e[tag=Main] Failures
 function praise:failure if @a[score_Failures=-1]

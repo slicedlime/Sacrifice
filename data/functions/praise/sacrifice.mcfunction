@@ -1,53 +1,53 @@
 # Check for an appropriate sacrifice
 
-execute @e[score_Current_min=1,tag=Apple] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:apple"},OnGround:1b}
-execute @e[score_Current_min=1,tag=CoalBlock] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:coal_block"},OnGround:1b}
-execute @e[score_Current_min=1,tag=IronIngot] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:iron_ingot"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Leather] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:leather"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Feather] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:feather"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Bone] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:bone"},OnGround:1b}
-execute @e[score_Current_min=1,tag=RottenFlesh] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:rotten_flesh"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Gunpowder] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:gunpowder"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Leaf] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:leaves"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Leaf] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:leaves2"},OnGround:1b}
-execute @e[score_Current_min=1,tag=String] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:string"},OnGround:1b}
-execute @e[score_Current_min=1,tag=PumpkinPie] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:pumpkin_pie"},OnGround:1b}
-execute @e[score_Current_min=1,tag=GoldIngot] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:gold_ingot"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Bookshelf] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:bookshelf"},OnGround:1b}
-execute @e[score_Current_min=1,tag=LavaBucket] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:lava_bucket"},OnGround:1b}
-execute @e[score_Current_min=1,tag=QuartzBlock] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:quartz_block"},OnGround:1b}
-execute @e[score_Current_min=1,tag=RedstoneBlock] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:redstone_block"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Clownfish] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:fish",Damage:2s},OnGround:1b}
-execute @e[score_Current_min=1,tag=Pufferfish] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:fish",Damage:3s},OnGround:1b}
-execute @e[score_Current_min=1,tag=GlowstoneBlock] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:glowstone"},OnGround:1b}
-execute @e[score_Current_min=1,tag=LapisBlock] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:lapis_block"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Cobweb] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:cobweb"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Slimeball] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:slimeball"},OnGround:1b}
-execute @e[score_Current_min=1,tag=EnderPearl] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:ender_pearl"},OnGround:1b}
-execute @e[score_Current_min=1,tag=GoldenApple] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:golden_apple"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Emerald] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:emerald"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Cake] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:cake"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Anvil] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:anvil"},OnGround:1b}
-execute @e[score_Current_min=1,tag=BlazeRod] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:blaze_rod"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Diamond] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:diamond"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Nametag] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:nametag"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Saddle] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:saddle"},OnGround:1b}
-execute @e[score_Current_min=1,tag=Cookie] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:cookie"},OnGround:1b}
-execute @e[score_Current_min=1,tag=AwkwardPotion] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:potion",tag:{Potion:"minecraft:awkward"}},OnGround:1b}
-execute @e[score_Current_min=1,tag=Obsidian] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:obsidian"},OnGround:1b}
-execute @e[score_Current_min=1,tag=EnchantingTable] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:enchanting_table"},OnGround:1b}
-execute @e[score_Current_min=1,tag=GhastTear] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:ghast_tear"},OnGround:1b}
-execute @e[score_Current_min=1,tag=MagmaCream] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:magma_cream"},OnGround:1b}
-execute @e[score_Current_min=1,tag=EndCrystal] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:end_crystal"},OnGround:1b}
-execute @e[score_Current_min=1,tag=DragonsBreath] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:dragon_breath"},OnGround:1b}
-execute @e[score_Current_min=1,tag=ChorusFruit] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:chorus_fruit"},OnGround:1b}
-execute @e[score_Current_min=1,tag=ShulkerShell] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:shulker_shell"},OnGround:1b}
-execute @e[score_Current_min=1,tag=DragonHead] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:skull",Damage:5s},OnGround:1b}
-execute @e[score_Current_min=1,tag=Elytra] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:elytra"},OnGround:1b}
-execute @e[score_Current_min=1,tag=WitherSkull] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:skull",Damage:1s},OnGround:1b}
-execute @e[score_Current_min=1,tag=Sponge] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:sponge"},OnGround:1b}
-execute @e[score_Current_min=1,tag=NetherStar] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:nether_star"},OnGround:1b}
-execute @e[score_Current_min=1,tag=TotemOfUndying] ~ ~ ~ scoreboard players tag @e[type=item,x=-189,y=90,z=262,r=2] add Accepted {Item:{id:"minecraft:totem_of_undying"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Apple] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:apple"},OnGround:1b}
+execute @e[score_Current_min=1,tag=CoalBlock] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:coal_block"},OnGround:1b}
+execute @e[score_Current_min=1,tag=IronIngot] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:iron_ingot"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Leather] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:leather"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Feather] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:feather"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Bone] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:bone"},OnGround:1b}
+execute @e[score_Current_min=1,tag=RottenFlesh] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:rotten_flesh"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Gunpowder] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:gunpowder"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Leaf] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:leaves"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Leaf] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:leaves2"},OnGround:1b}
+execute @e[score_Current_min=1,tag=String] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:string"},OnGround:1b}
+execute @e[score_Current_min=1,tag=PumpkinPie] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:pumpkin_pie"},OnGround:1b}
+execute @e[score_Current_min=1,tag=GoldIngot] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:gold_ingot"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Bookshelf] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:bookshelf"},OnGround:1b}
+execute @e[score_Current_min=1,tag=LavaBucket] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:lava_bucket"},OnGround:1b}
+execute @e[score_Current_min=1,tag=QuartzBlock] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:quartz_block"},OnGround:1b}
+execute @e[score_Current_min=1,tag=RedstoneBlock] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:redstone_block"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Clownfish] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:fish",Damage:2s},OnGround:1b}
+execute @e[score_Current_min=1,tag=Pufferfish] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:fish",Damage:3s},OnGround:1b}
+execute @e[score_Current_min=1,tag=GlowstoneBlock] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:glowstone"},OnGround:1b}
+execute @e[score_Current_min=1,tag=LapisBlock] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:lapis_block"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Cobweb] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:cobweb"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Slimeball] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:slimeball"},OnGround:1b}
+execute @e[score_Current_min=1,tag=EnderPearl] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:ender_pearl"},OnGround:1b}
+execute @e[score_Current_min=1,tag=GoldenApple] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:golden_apple"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Emerald] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:emerald"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Cake] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:cake"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Anvil] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:anvil"},OnGround:1b}
+execute @e[score_Current_min=1,tag=BlazeRod] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:blaze_rod"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Diamond] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:diamond"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Nametag] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:nametag"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Saddle] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:saddle"},OnGround:1b}
+execute @e[score_Current_min=1,tag=Cookie] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:cookie"},OnGround:1b}
+execute @e[score_Current_min=1,tag=AwkwardPotion] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:potion",tag:{Potion:"minecraft:awkward"}},OnGround:1b}
+execute @e[score_Current_min=1,tag=Obsidian] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:obsidian"},OnGround:1b}
+execute @e[score_Current_min=1,tag=EnchantingTable] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:enchanting_table"},OnGround:1b}
+execute @e[score_Current_min=1,tag=GhastTear] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:ghast_tear"},OnGround:1b}
+execute @e[score_Current_min=1,tag=MagmaCream] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:magma_cream"},OnGround:1b}
+execute @e[score_Current_min=1,tag=EndCrystal] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:end_crystal"},OnGround:1b}
+execute @e[score_Current_min=1,tag=DragonsBreath] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:dragon_breath"},OnGround:1b}
+execute @e[score_Current_min=1,tag=ChorusFruit] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:chorus_fruit"},OnGround:1b}
+execute @e[score_Current_min=1,tag=ShulkerShell] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:shulker_shell"},OnGround:1b}
+execute @e[score_Current_min=1,tag=DragonHead] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:skull",Damage:5s},OnGround:1b}
+execute @e[score_Current_min=1,tag=Elytra] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:elytra"},OnGround:1b}
+execute @e[score_Current_min=1,tag=WitherSkull] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:skull",Damage:1s},OnGround:1b}
+execute @e[score_Current_min=1,tag=Sponge] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:sponge"},OnGround:1b}
+execute @e[score_Current_min=1,tag=NetherStar] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:nether_star"},OnGround:1b}
+execute @e[score_Current_min=1,tag=TotemOfUndying] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ scoreboard players tag @e[type=item,r=2] add Accepted {Item:{id:"minecraft:totem_of_undying"},OnGround:1b}
 
 # Figure out how many
 
@@ -118,8 +118,8 @@ scoreboard players set @s Sacrifice 64 {Item:{Count:64b}}
 
 # Accept the sacrifice
 
-execute @e[tag=Accepted,score_Sacrifice_min=1] ~ ~ ~ particle happyVillager -188.5 89.8 262.5 0.2 0.75 0.2 0 5 
-execute @e[tag=Accepted,score_Sacrifice_min=1] ~ ~ ~ particle smoke -188.5 89.8 262.5 0.4 0.5 0.4 0 10 
+execute @e[tag=Accepted,score_Sacrifice_min=1] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ particle happyVillager ~ ~-0.2 ~ 0.2 0.75 0.2 0 5 
+execute @e[tag=Accepted,score_Sacrifice_min=1] ~ ~ ~ execute @e[tag=Main] ~ ~ ~ particle smoke ~ ~-0.2 ~ 0.4 0.5 0.4 0 10 
 
 scoreboard players operation @e[tag=Current] Sacrifice -= @s[tag=Accepted,score_Sacrifice_min=1] Sacrifice
 execute @e[tag=Current,score_Sacrifice_min=0] ~ ~ ~ kill @e[tag=Accepted,score_Sacrifice_min=1]
