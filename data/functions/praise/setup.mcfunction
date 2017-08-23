@@ -1,5 +1,7 @@
 # Summon all the aecs and set scores
 
+gamerule commandBlockOutput false
+
 function praise:setupscoreboards
 
 kill @e[tag=Main]
@@ -13,6 +15,7 @@ execute @e[tag=Main] ~ ~ ~ function praise:altar
 
 effect @a instant_health 1 10
 effect @a saturation 1 10
+gamemode survival @a
 
 function praise:setuptargets
 
@@ -20,3 +23,5 @@ scoreboard players set @e[tag=Main] Sacrifice 0
 
 time set 23800
 scoreboard teams leave @a
+
+gamerule gameLoopFunction praise:loop
