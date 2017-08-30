@@ -13,11 +13,12 @@ scoreboard objectives add Deaths deathCount Death count
 scoreboard objectives add Sacrifice dummy Current Sacrifice count
 scoreboard objectives add Current dummy Current Sacrifice item
 scoreboard objectives add Day dummy Day counter
+scoreboard objectives add Cooldown dummy Selection cooldown
 
 # Set up constants
 
 scoreboard players set 10 Const 10
-scoreboard players set 15 Const 15
+scoreboard players set 13 Const 13
 
 # Clear old values
 

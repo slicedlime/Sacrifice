@@ -6,7 +6,7 @@ function praise:setupscoreboards
 
 kill @e[tag=Main]
 
-setworldspawn
+setworldspawn ~ ~ ~
 summon leash_knot ~ ~ ~ {Tags:[Setup]}
 execute @e[tag=Setup] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Tags:[Main],CustomName:"Main",Duration: 2147483647}
 kill @e[tag=Setup]

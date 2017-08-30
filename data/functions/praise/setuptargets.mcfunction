@@ -3,7 +3,6 @@
 kill @e[tag=Target]
 kill @e[tag=SamePlural]
 
-summon area_effect_cloud ~ 1 ~ {Tags:[Target,T1,Apple,An],CustomName:"Apple",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T1,CoalBlock,A],CustomName:"Coal Block",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T1,IronIngot,An],CustomName:"Iron Ingot“,Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T1,Leather,SamePlural,A],CustomName:"Leather",Duration: 2147483647}
@@ -15,9 +14,11 @@ summon area_effect_cloud ~ 1 ~ {Tags:[Target,T2,Bone,A],CustomName:"Bone",Durati
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T2,RottenFlesh,SamePlural,A],CustomName:"Rotten Flesh“,Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T2,Gunpowder,A],CustomName:"Gunpowder",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T2,String,A],CustomName:"String",Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[Target,T2,Apple,An],CustomName:"Apple",Duration: 2147483647}
 
 scoreboard players set @e[tag=T2] Target 2
 
+summon area_effect_cloud ~ 1 ~ {Tags:[Target,T5,LavaBucket,A],CustomName:"Lava Bucket",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T5,Leaf,UniquePlural,A],CustomName:"Leaf",Duration: 2147483647}
 scoreboard players set @e[tag=Leaf] ItemId 1
 summon area_effect_cloud ~ 1 ~ {Tags:[LeafPlural,SamePlural],CustomName:"Leaves",Duration: 2147483647}
@@ -31,13 +32,11 @@ summon area_effect_cloud ~ 1 ~ {Tags:[Target,T10,Bookshelf,UniquePlural,A],Custo
 scoreboard players set @e[tag=Bookshelf] ItemId 2
 summon area_effect_cloud ~ 1 ~ {Tags:[BookshelfPlural,SamePlural],CustomName:"Bookshelves",Duration: 2147483647}
 scoreboard players set @e[tag=BookshelfPlural] ItemId 2
-summon area_effect_cloud ~ 1 ~ {Tags:[Target,T10,LavaBucket,A],CustomName:"Lava Bucket",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T10,QuartzBlock,A],CustomName:"Quartz Block",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T10,RedstoneBlock,A],CustomName:"Redstone Block",Duration: 2147483647}
 
 scoreboard players set @e[tag=T10] Target 10
 
-summon area_effect_cloud ~ 1 ~ {Tags:[Target,T15,Clownfish,SamePlural,A],CustomName:"Clownfish",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T15,Pufferfish,SamePlural,A],CustomName:"Pufferfish",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T15,GlowstoneBlock,A],CustomName:"Glowstone Block",Duration: 2147483647}
 summon area_effect_cloud ~ 1 ~ {Tags:[Target,T15,LapisBlock,A],CustomName:"Lapis Lazuli Block",Duration: 2147483647}
@@ -109,3 +108,5 @@ summon area_effect_cloud ~ 1 ~ {Tags:[TotemPlural,SamePlural],CustomName:"Totems
 scoreboard players set @e[tag=TotemPlural] ItemId 5
 
 scoreboard players set @e[tag=T8000] Target 8000
+
+scoreboard players set @e[tag=Target] Cooldown 0
