@@ -23,3 +23,10 @@ execute @p[m=survival] ~ ~ ~ scoreboard players add Ticks Info 1
 execute @p[m=survival] ~ ~ ~ scoreboard players operation Seconds Info = Ticks Info
 execute @p[m=survival] ~ ~ ~ scoreboard players operation Seconds Info /= 20 Const
 execute @p[m=survival] ~ ~ ~ scoreboard players operation Score Stats = Seconds Info
+
+# Prevent player from sleeping
+
+scoreboard players tag @a remove Sleeping
+scoreboard players tag @a add Sleeping {Sleeping:1b}
+execute @a[tag=Sleeping] ~ ~ ~ setblock ~ ~ ~ air 0 destroy
+tellraw @a[tag=Sleeping] [{"text":"The God's Chosen do not sleep","color":"red"}]
