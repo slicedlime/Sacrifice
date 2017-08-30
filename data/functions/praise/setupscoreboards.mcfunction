@@ -25,3 +25,9 @@ scoreboard players set 13 Const 13
 scoreboard players reset * Failures
 scoreboard players reset Ticks Info
 scoreboard players reset * ItemId
+
+# Set up teams
+
+scoreboard teams add DeadPlayers
+scoreboard teams option DeadPlayers color black
+scoreboard objectives setdisplay sidebar.team.black Stats
