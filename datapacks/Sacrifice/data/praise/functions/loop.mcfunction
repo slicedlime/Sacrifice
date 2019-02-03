@@ -1,32 +1,26 @@
-stats entity @e[tag=Main] set QueryResult @s Time
-scoreboard players add @e[tag=Main] Time 0
-execute @e[tag=Main] ~ ~ ~ time query daytime
+execute store result score $Main Time run time query daytime
+execute if score $Main Time matches 0 run function praise:newgoal
 
-function praise:newgoal if @e[tag=Main,score_Time=0]
+execute as @e[tag=Current] run title @a actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
 
-execute @e[tag=Current] ~ ~ ~ title @a actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute at @e[tag=Main] as @e[type=item,distance=..2] run function praise:sacrifice
 
-execute @e[tag=Main] ~ ~ ~ execute @e[type=item,r=2] ~ ~ ~ function praise:sacrifice
+scoreboard players operation @a Failures -= $Main Failures
+execute if entity @a[scores={Failures=..-1}] run function praise:failure
+scoreboard players operation @a Failures = $Main Failures
 
-scoreboard players operation @a Failures -= @e[tag=Main] Failures
-function praise:failure if @a[score_Failures=-1]
-scoreboard players operation @a Failures = @e[tag=Main] Failures
+execute if entity @a[nbt=!{Inventory:[{id:"minecraft:chainmail_helmet"}]}] run function praise:failure 
 
-scoreboard players tag @a add HasHelmet {Inventory:[{id:"minecraft:chainmain_helmet"}]}
-function praise:failure if @a[tag=!HasHelmet]
-
-scoreboard teams join DeadPlayers @a[score_Deaths_min=1]
-gamemode spectator @a[score_Deaths_min=1]
+team join DeadPlayers @a[scores={Deaths=1..}]
+gamemode spectator @a[scores={Deaths=1..}]
 scoreboard players set @a Deaths 0
 
-execute @p[m=survival] ~ ~ ~ scoreboard players add Ticks Info 1
-execute @p[m=survival] ~ ~ ~ scoreboard players operation Seconds Info = Ticks Info
-execute @p[m=survival] ~ ~ ~ scoreboard players operation Seconds Info /= 20 Const
-execute @p[m=survival] ~ ~ ~ scoreboard players operation Score Stats = Seconds Info
+execute if entity @p[gamemode=survival] run scoreboard players add Ticks Info 1
+execute if entity @p[gamemode=survival] run scoreboard players operation Seconds Info = Ticks Info
+execute if entity @p[gamemode=survival] run scoreboard players operation Seconds Info /= 20 Const
+execute if entity @p[gamemode=survival] run scoreboard players operation Score Stats = Seconds Info
 
 # Prevent player from sleeping
 
-scoreboard players tag @a remove Sleeping
-scoreboard players tag @a add Sleeping {Sleeping:1b}
-execute @a[tag=Sleeping] ~ ~ ~ setblock ~ ~ ~ air 0 destroy
-tellraw @a[tag=Sleeping] [{"text":"The God's Chosen do not sleep","color":"red"}]
+tellraw @a[nbt={Sleeping:1b}] [{"text":"The God's Chosen do not sleep","color":"red"}]
+execute as @a[nbt={Sleeping:1b}] at @s run setblock ~ ~ ~ air destroy
