@@ -7,21 +7,19 @@ function praise:setupscoreboards
 kill @e[tag=Main]
 
 setworldspawn ~ ~ ~
-summon leash_knot ~ ~ ~ {Tags:[Setup]}
-execute @e[tag=Setup] ~ ~ ~ summon area_effect_cloud ~ ~ ~ {Tags:[Main],CustomName:"Main",Duration: 2147483647}
-kill @e[tag=Setup]
+execute align xyz run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Tags:[Main],CustomName:"\"Main\"",Duration: 2147483647}
 
-execute @e[tag=Main] ~ ~ ~ function praise:altar
+execute as @e[tag=Main] at @s run function praise:altar
 
-effect @a instant_health 1 10
-effect @a saturation 1 10
+effect give @a instant_health 1 10
+effect give @a saturation 1 10
 gamemode survival @a
+clear @a
 
 function praise:setuptargets
 
 scoreboard players set @e[tag=Main] Sacrifice 0
+function praise:failure
 
 time set 23800
-scoreboard teams leave @a
-
-gamerule gameLoopFunction praise:loop
+team leave @a

@@ -1,10 +1,13 @@
 # Build an altar
 
-summon area_effect_cloud ~ ~ ~ {Tags:[Altar,KAltar,A1],Duration:1}
-
-
 # Randomly pick one
-scoreboard players tag @r[type=area_effect_cloud,tag=Altar] remove KAltar
-kill @e[type=area_effect_cloud,tag=KAltar]
+function bitmath:rng
 
-function praise:altar1 if @e[tag=A1]
+scoreboard players operation $Altar Calc = $r Registry
+scoreboard players set $Count Calc 1
+scoreboard players operation $Altar Calc %= $Count Calc
+
+execute if score $Altar Calc matches 0 run function praise:altar1
+
+scoreboard players reset $Count Calc
+scoreboard players reset $Altar Calc

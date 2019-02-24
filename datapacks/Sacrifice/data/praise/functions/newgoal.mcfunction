@@ -6,6 +6,8 @@ execute if entity @e[tag=Current] run scoreboard players add $Main Failures 1
 execute if entity @e[tag=Current] run tellraw @a [{"text":"Your failure to deliver has angered the Gods!","color":"red"}]
 execute if entity @e[tag=Current] run effect give @a minecraft:slowness 2 2
 execute if entity @e[tag=Current] run effect give @a minecraft:blindness 2 16
+# Update helmet
+function praise:failure
 
 # Increase difficulty
 scoreboard players operation $Main Sacrifice *= 13 Const
@@ -25,7 +27,13 @@ scoreboard players add @e[tag=Target] Cooldown 0
 
 # Select a new goal
 tag @e[tag=Current] remove Current
-tag @e[type=area_effect_cloud,tag=Target,scores={Sacrifice=1..,Cooldown=..0},sort=random,limit=1] add Current
+function bitmath:rng
+scoreboard players operation $Selected Calc = $r Registry
+tag @e[type=area_effect_cloud,tag=Target,scores={Sacrifice=1..,Cooldown=..0}] add PossibleSacrifice
+execute store result score $Max Calc if entity @e[tag=PossibleSacrifice]
+scoreboard players operation $Selected Calc %= $Max Calc
+scoreboard players operation $SelectedIn Calc = $Selected Calc
+function praise:findselected
 scoreboard players reset @e[tag=!Current] Sacrifice
 
 # Increase day count
