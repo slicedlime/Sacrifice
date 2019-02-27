@@ -39,3 +39,6 @@ scoreboard players operation $rng Registry += @e[sort=random,limit=1,tag=Randomi
 scoreboard players operation @e[tag=Randomizer] Calc *= 2 Const
 scoreboard players operation $rng Registry += @e[sort=random,limit=1,tag=Randomizer] Calc
 scoreboard players operation @e[tag=Randomizer] Calc *= 2 Const
+
+# Ensure seed will be non-zero
+execute if score $rng Registry matches 0 run scoreboard players set $rng Registry 8625
