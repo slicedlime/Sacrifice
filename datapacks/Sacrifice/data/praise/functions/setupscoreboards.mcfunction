@@ -38,6 +38,9 @@ scoreboard objectives add SacrificeID dummy "Unique IDs for sacrifice items"
 
 scoreboard players set 10 Const 10
 scoreboard players set 13 Const 13
+scoreboard players set -1 Const -1
+scoreboard players set 1 Const 1
+scoreboard players set 20 Const 20
 
 # Ensure there is a seed
 

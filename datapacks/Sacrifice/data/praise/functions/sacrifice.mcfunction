@@ -28,7 +28,7 @@ execute if entity @e[tag=Current,tag=Pufferfish] at @e[tag=Main] run tag @e[type
 execute if entity @e[tag=Current,tag=GlowstoneBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:glowstone"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=LapisBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:lapis_block"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Cobweb] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:cobweb"},OnGround:1b}] add Accepted
-execute if entity @e[tag=Current,tag=Slimeball] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:slimeball"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=Slimeball] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:slime_ball"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EnderPearl] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:ender_pearl"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=GoldenApple] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:golden_apple"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Emerald] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:emerald"},OnGround:1b}] add Accepted
@@ -55,28 +55,4 @@ execute if entity @e[tag=Current,tag=Sponge] at @e[tag=Main] run tag @e[type=ite
 execute if entity @e[tag=Current,tag=NetherStar] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:nether_star"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=TotemOfUndying] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:totem_of_undying"},OnGround:1b}] add Accepted
 
-# Figure out how many
-
-execute store result score @s Sacrifice run data get entity @s Item.Count
-
-# Accept the sacrifice
-
-execute if entity @e[tag=Accepted,scores={Sacrifice=1..}] at @e[tag=Main] run particle happy_villager ~ ~-0.2 ~ 0.2 0.75 0.2 0 5 
-execute if entity @e[tag=Accepted,scores={Sacrifice=1..}] at @e[tag=Main] run particle smoke ~ ~-0.2 ~ 0.4 0.5 0.4 0 10 
-
-# Reduce the number of sacrifices remaining
-scoreboard players operation @e[tag=Current] Sacrifice -= @s[tag=Accepted,scores={Sacrifice=1}] Sacrifice
-execute if entity @e[tag=Current,scores={Sacrifice=0..}] run kill @e[tag=Accepted,scores={Sacrifice=1..}]
-
-# Manage remaining items on altar
-scoreboard players operation @e[tag=Accepted] Sacrifice = @e[tag=Current] Sacrifice
-scoreboard players operation @e[tag=Accepted] Sacrifice *= -1 Const
-
-execute as @e[tag=Accepted] store result entity @s Item.Count byte 1 run scoreboard players get @s Sacrifice
-
-execute if entity @e[tag=Current,scores={Sacrifice=..0}] run title @a title [{"text":"The Gods are pleased"}]
-execute if entity @e[tag=Current,scores={Sacrifice=..0}] run title @a subtitle [{"text":"... for now"}]
-execute if entity @e[tag=Current,scores={Sacrifice=..0}] run title @a actionbar [{"text":""}]
-
-tag @e[tag=Current,scores={Sacrifice=..0}] remove Current
-scoreboard players reset @e[scores={Sacrifice=..0}] Sacrifice
+execute as @s[tag=Accepted] run function praise:sacrificeitem

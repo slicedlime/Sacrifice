@@ -102,7 +102,7 @@ function praise:assignid
 
 scoreboard players set @e[tag=T75] Target 75
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Obsidan,SamePlural,An],CustomName:"\"Obsidian\"",Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Obsidian,SamePlural,An],CustomName:"\"Obsidian\"",Duration: 2147483647}
 function praise:assignid
 
 scoreboard players set @e[tag=T100] Target 100
