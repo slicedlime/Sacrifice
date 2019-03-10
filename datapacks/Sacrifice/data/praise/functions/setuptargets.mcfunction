@@ -1,8 +1,5 @@
 # Set up target values
 
-kill @e[tag=Target]
-kill @e[tag=SamePlural]
-
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,CoalBlock,A],CustomName:"\"Coal Block\"",Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,IronIngot,An],CustomName:"\"Iron Ingot\"",Duration: 2147483647}
