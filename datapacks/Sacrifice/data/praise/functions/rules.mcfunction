@@ -1,13 +1,22 @@
 # Send rules blurb to @s
 
-tellraw @s [{"text":"Welcome to Project Sacrifice by ","color":"gold"},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
-tellraw @s [""]
-tellraw @s ["In Project Sacrifice, you have been chosen by the Gods."]
-tellraw @s ["Every day, they will require a sacrifice to be made."]
-tellraw @s ["Sacrifice items by throwing them on the altar."]
-tellraw @s ["Failure to sacrifice items before the next dawn will lower your maximum health by 2 hearts."]
-tellraw @s ["The items requested will increase in difficulty as time goes on."]
-tellraw @s ["This is a hardcore challenge - the game ends when you die, and your score is calculated from the time you stayed alive."]
+scoreboard players add @s SacrificeRules 1
 
-scoreboard players set @s SacrificeMenu 0
-scoreboard players set @s SacrificeStatus 101
+tellraw @s[scores={SacrificeRules=1}] [{"text":"\nThe old Gods were silent, their altar vacant. As they faded from traditions and memories, lives went on... until now.","color":"light_purple","italic":true}]
+
+tellraw @s[scores={SacrificeRules=150}] [{"text":"\nToday, they chose you - long may you regret stepping onto the altar this day.","color":"light_purple","italic":true}]
+
+tellraw @s[scores={SacrificeRules=300}] [{"text":"\nIn the "},{"text":"Chosen","color":"gold"},{"text":" Minecraft challenge pack, you take the role of the Gods' Chosen."}]
+
+tellraw @s[scores={SacrificeRules=450}] [{"text":"\nAt dawn every day, the Gods will demand a "},{"text":"sacrifice","color":"red"},{"text":" at the altar, and their whims and desires are mighty specific."}]
+
+tellraw @s[scores={SacrificeRules=600}] [{"text":"\nAs days go on, the difficulty of these requests will increase."}]
+
+tellraw @s[scores={SacrificeRules=750}] [{"text":"\nFailing to deliver is costly - the wrath of the Gods takes away "},{"text":"\u2665\u2665","bold":true,"color":"red"},{"text":" of maximum health."}]
+
+tellraw @s[scores={SacrificeRules=900}] [{"text":"\n"},{"text":"Chosen","color":"gold"},{"text":" is a hardcore challenge of survival - dying ends the challenge and displays your final statistics."}]
+
+tellraw @s[scores={SacrificeRules=1050}] [{"text":"\nYour score at the end of the game represents the number of seconds you stayed alive."}]
+
+scoreboard players reset @s[scores={SacrificeRules=1050}] SacrificeRules
+scoreboard players set @s SacrificeStatus 1100

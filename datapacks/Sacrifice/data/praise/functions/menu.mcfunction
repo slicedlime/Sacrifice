@@ -4,7 +4,7 @@ scoreboard players enable @a SacrificeMenu
 scoreboard players enable @a Seed
 
 tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n"]
-tellraw @s [{"text":"Welcome to Project Sacrifice by ","color":"gold"},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
+tellraw @s [{"text":"Welcome to Chosen by ","color":"gold"},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
 tellraw @s [""]
 tellraw @s ["Game options:"]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Game Rules", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 1"}},{"text":"]","color":"gold", "bold": true}]

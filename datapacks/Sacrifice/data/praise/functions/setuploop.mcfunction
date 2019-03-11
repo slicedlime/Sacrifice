@@ -8,6 +8,7 @@ time set noon
 # Set up scoreboards
 scoreboard objectives add SacrificeStatus dummy "Sacrifice Status"
 scoreboard objectives add SacrificeMenu trigger "Sacrifice Menu Actions"
+scoreboard objectives add SacrificeRules dummy "Sacrifice Rules ticker"
 scoreboard objectives add Seed trigger "Sacrifice Seed Trigger"
 scoreboard objectives add Registry dummy "Math Registry"
 scoreboard objectives add Calc dummy "Calculation scoreboard"
@@ -15,6 +16,9 @@ scoreboard objectives add Calc dummy "Calculation scoreboard"
 # Ensure there is a seed
 scoreboard players add $rng Registry 0
 execute if score $rng Registry matches 0 run function praise:randomseed
+
+# Rules
+execute as @a[scores={SacrificeRules=0..}] run function praise:rules
 
 # Show menu
 scoreboard players set $Max SacrificeStatus 1200
@@ -27,6 +31,7 @@ title @a actionbar "Use the chat menu to start the game"
 execute as @a[scores={SacrificeMenu=1}] run function praise:rules
 execute as @a[scores={SacrificeMenu=2}] run function praise:placealtar
 execute as @a[scores={SacrificeMenu=3}] at @s run function praise:setup
+scoreboard players set @a[scores={SacrificeMenu=1..}] SacrificeMenu 0
 
 execute as @a[scores={Seed=1..}] run function praise:setseed
 
