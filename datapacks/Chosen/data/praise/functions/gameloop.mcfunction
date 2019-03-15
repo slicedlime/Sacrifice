@@ -1,6 +1,9 @@
 execute store result score $Main Time run time query daytime
 execute if score $Main Time matches 0 run function praise:newgoal
 
+execute if score $Running Info matches 1 unless entity @a[team=!DeadPlayers] run function praise:pause
+execute unless score $Running Info matches 1 if entity @a[team=!DeadPlayers] run function praise:unpause
+
 execute as @e[tag=Current] run title @a actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
 
 execute at @e[tag=Main] as @e[type=item,distance=..2] run function praise:sacrifice
