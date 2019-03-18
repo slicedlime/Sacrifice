@@ -14,7 +14,6 @@ scoreboard objectives remove Sacrifice
 scoreboard objectives remove Current
 scoreboard objectives remove Day
 scoreboard objectives remove Cooldown
-scoreboard objectives remove Registry
 scoreboard objectives remove SacrificeID
 
 kill @e[tag=Main]

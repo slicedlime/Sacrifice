@@ -9,6 +9,8 @@ gamerule doMobSpawning true
 function praise:reset
 function praise:setupscoreboards
 
+gamerule maxCommandChainLength 100000
+
 execute if entity @e[tag=Altar] at @e[tag=Altar] align xyz run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Tags:[Main],CustomName:"\"Main\"",Duration: 2147483647}
 execute unless entity @e[tag=Altar] align xyz run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Tags:[Main],CustomName:"\"Main\"",Duration: 2147483647}
 
