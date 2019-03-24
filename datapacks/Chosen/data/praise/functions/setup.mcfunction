@@ -20,16 +20,19 @@ execute as @e[tag=Main] at @s run function praise:altar
 effect give @a instant_health 1 10 true
 effect give @a saturation 1 10 true
 effect give @a resistance 1 10 true
-gamemode survival @a
+gamemode survival @a[team=!watchers]
+gamemode spectator @a[team=watchers]
 clear @a
 
+worldborder set 60000000
+
+function praise:setupteams
 function praise:setuptargets
 
 scoreboard players set @e[tag=Main] Sacrifice 0
 function praise:failure
 
 time set 23800
-team leave @a
 
 execute at @e[tag=Main,limit=1] run teleport @a ~ ~ ~ -90 0
 kill @e[tag=Altar]

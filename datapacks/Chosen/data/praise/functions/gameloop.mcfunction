@@ -4,7 +4,29 @@ execute if score $Main Time matches 0 run function praise:newgoal
 execute if score $Running Info matches 1 unless entity @a[team=!DeadPlayers] run function praise:pause
 execute unless score $Running Info matches 1 if entity @a[team=!DeadPlayers] run function praise:unpause
 
-execute as @e[tag=Current] run title @a actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+team join watchers @a[team=]
+gamemode spectator @a[team=watchers,gamemode=!spectator]
+
+execute as @e[tag=Chosen,scores={Sacrifice=1..}] run title @a[team=chosen] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Servants,scores={Sacrifice=1..}] run title @a[team=servants] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Fallen,scores={Sacrifice=1..}] run title @a[team=fallen] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Devout,scores={Sacrifice=1..}] run title @a[team=devout] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Clergy,scores={Sacrifice=1..}] run title @a[team=clergy] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Collectors,scores={Sacrifice=1..}] run title @a[team=collectors] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Forsaken,scores={Sacrifice=1..}] run title @a[team=forsaken] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+execute as @e[tag=Believers,scores={Sacrifice=1..}] run title @a[team=believers] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+title @a[team=watchers] actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
+
+# Put items on same team as thrower
+execute as @a[scores={DropItem=1..},team=chosen] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add chosen
+execute as @a[scores={DropItem=1..},team=servants] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add servants
+execute as @a[scores={DropItem=1..},team=fallen] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add fallen
+execute as @a[scores={DropItem=1..},team=devout] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add devout
+execute as @a[scores={DropItem=1..},team=clergy] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add clergy
+execute as @a[scores={DropItem=1..},team=collectors] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add collectors
+execute as @a[scores={DropItem=1..},team=forsaken] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add forsaken
+execute as @a[scores={DropItem=1..},team=believers] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add believers
+scoreboard players reset @a DropItem
 
 execute at @e[tag=Main] as @e[type=item,distance=..2] run function praise:sacrifice
 
@@ -14,7 +36,7 @@ scoreboard players operation @a Failures = $Main Failures
 
 execute if entity @a[nbt=!{Inventory:[{id:"minecraft:chainmail_helmet"}]}] run function praise:failure 
 
-team join DeadPlayers @a[scores={Deaths=1..}]
+team join watchers @a[scores={Deaths=1..}]
 gamemode spectator @a[scores={Deaths=1..}]
 scoreboard players set @a Deaths 0
 

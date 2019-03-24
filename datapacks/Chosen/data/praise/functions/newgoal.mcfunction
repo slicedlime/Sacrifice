@@ -1,18 +1,14 @@
 # Select a new goal
 
 # Check if previous goal was completed
-scoreboard players add $Main Failures 0
-execute if entity @e[tag=Current] run scoreboard players add $Main Failures 1
-execute if entity @e[tag=Current] run tellraw @a [{"text":"Your failure to deliver has angered the Gods!","color":"red"}]
-execute if entity @e[tag=Current] run effect give @a minecraft:slowness 2 2
-execute if entity @e[tag=Current] run effect give @a minecraft:blindness 2 16
+scoreboard players add @e[tag=Team] Failures 0
+execute as @e[tag=Team,scores={Sacrifice=1..}] run function praise:failteam
+
 # Update helmet
 function praise:failure
 
 # Increase difficulty
-scoreboard players operation $Main Sacrifice *= 13 Const
-scoreboard players operation $Main Sacrifice /= 10 Const
-scoreboard players add $Main Sacrifice 4
+execute unless entity @e[scores={Sacrifice=1..}] run function praise:add_difficulty
 
 # Calculate item amounts
 execute as @e[tag=Target] run scoreboard players operation @s Sacrifice = $Main Sacrifice
@@ -20,7 +16,7 @@ execute as @e[tag=Target] run scoreboard players operation @s Sacrifice /= @s Ta
 
 # Clear out items of invalid counts
 scoreboard players reset @e[tag=Target,scores={Sacrifice=..0}] Sacrifice
-scoreboard players reset @e[tag=Target,scores={Sacrifice=7..}] Sacrifice
+scoreboard players reset @e[tag=Target,scores={Sacrifice=5..}] Sacrifice
 
 # Make sure they all have a cooldown value
 scoreboard players add @e[tag=Target] Cooldown 0
@@ -36,6 +32,9 @@ scoreboard players operation $SelectedIn Calc = $Selected Calc
 function praise:findselected
 scoreboard players reset @e[tag=!Current] Sacrifice
 
+# Multiply by player count
+execute as @e[tag=Team] run function praise:set_team_sacrifice
+
 # Increase day count
 scoreboard players add $Main Day 1
 scoreboard players operation Day Stats = $Main Day
@@ -50,4 +49,4 @@ scoreboard players remove @e[scores={Cooldown=1..}] Cooldown 1
 scoreboard players set @e[tag=Current] Cooldown 2
 
 # Display goal
-function praise:displaygoal
+execute as @e[tag=Team] run function praise:displaygoal

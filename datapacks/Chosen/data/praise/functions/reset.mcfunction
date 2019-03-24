@@ -15,7 +15,9 @@ scoreboard objectives remove Current
 scoreboard objectives remove Day
 scoreboard objectives remove Cooldown
 scoreboard objectives remove SacrificeID
+scoreboard objectives remove DropItem
 
 kill @e[tag=Main]
 kill @e[tag=Target]
 kill @e[tag=SamePlural]
+kill @e[tag=Team]

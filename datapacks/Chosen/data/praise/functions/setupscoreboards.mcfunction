@@ -15,6 +15,7 @@ scoreboard objectives add Current dummy "Current Sacrifice item"
 scoreboard objectives add Day dummy "Day counter"
 scoreboard objectives add Cooldown dummy "Selection cooldown"
 scoreboard objectives add SacrificeID dummy "Unique IDs for sacrifice items"
+scoreboard objectives add DropItem minecraft.custom:minecraft.drop "Items Dropped"
 
 # Set up constants
 
@@ -23,9 +24,3 @@ scoreboard players set 13 Const 13
 scoreboard players set -1 Const -1
 scoreboard players set 1 Const 1
 scoreboard players set 20 Const 20
-
-# Set up teams
-
-team add DeadPlayers
-team modify DeadPlayers color black
-scoreboard objectives setdisplay sidebar.team.black Stats
