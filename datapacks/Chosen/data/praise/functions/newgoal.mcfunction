@@ -16,7 +16,9 @@ execute as @e[tag=Target] run scoreboard players operation @s Sacrifice /= @s Ta
 
 # Clear out items of invalid counts
 scoreboard players reset @e[tag=Target,scores={Sacrifice=..0}] Sacrifice
-scoreboard players reset @e[tag=Target,scores={Sacrifice=5..}] Sacrifice
+execute if score $Main Sacrifice matches ..5000 run scoreboard players reset @e[tag=Target,scores={Sacrifice=6..}] Sacrifice
+# At the end game, allow up to 10 instead
+execute if score $Main Sacrifice matches 5001.. run scoreboard players reset @e[tag=Target,scores={Sacrifice=11..}] Sacrifice
 
 # Make sure they all have a cooldown value
 scoreboard players add @e[tag=Target] Cooldown 0

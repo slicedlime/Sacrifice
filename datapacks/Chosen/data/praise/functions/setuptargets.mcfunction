@@ -238,8 +238,9 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,TotemOfUndying,UniquePlur
 function praise:assignid
 scoreboard players set @e[tag=TotemOfUndying] ItemId 5
 summon area_effect_cloud ~ 1 ~ {Tags:[TotemPlural,SamePlural],CustomName:"\"Totems of Undying\"",Duration: 2147483647}
-function praise:assignid
 scoreboard players set @e[tag=TotemPlural] ItemId 5
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,NetherStar,A],CustomName:"\"Nether Star\"",Duration: 2147483647}
+function praise:assignid
 
 scoreboard players set @e[tag=T8000] Target 8000
 
