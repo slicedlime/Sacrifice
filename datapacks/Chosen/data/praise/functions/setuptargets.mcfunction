@@ -68,8 +68,6 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,GoldIngot,A],CustomName:"\"G
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,SnowBlock,A],CustomName:"\"Snow Block\"",Duration: 2147483647}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,DriedKelpBlock,A],CustomName:"\"Dried Kelp Block\"",Duration: 2147483647}
-function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,BookAndQuill,A],CustomName:"\"Writable Book\"",Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,FireworkRocket,A],CustomName:"\"Firework Rocket\"",Duration: 2147483647}

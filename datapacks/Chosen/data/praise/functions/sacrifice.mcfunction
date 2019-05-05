@@ -64,7 +64,6 @@ execute if entity @e[tag=Current,tag=Clownfish] at @e[tag=Main] run tag @e[type=
 execute if entity @e[tag=Current,tag=GlowstoneBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:glowstone"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=PoisonousPotato] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:poisonous_potato"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=SnowBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:snow_block"},OnGround:1b}] add Accepted
-execute if entity @e[tag=Current,tag=DriedKelpBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:dried_kelp_block"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=BookAndQuill] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:writable_book"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=FireworkRocket] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:firework_rocket"},OnGround:1b}] add Accepted
 
