@@ -104,15 +104,25 @@ execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=
 execute if entity @e[tag=Current,tag=Nametag] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:name_tag"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Saddle] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:saddle"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Cookie] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:cookie"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=Bamboo] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:bamboo"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=HeartOfTheSea] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:heart_of_the_sea"},OnGround:1b}] add Accepted
 
 execute if entity @e[tag=Current,tag=AwkwardPotion] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:potion",tag:{Potion:"minecraft:awkward"}},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Obsidian] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:obsidian"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=Bell] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:bell"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EnchantedBook] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:enchanted_book"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EnchantingTable] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:enchanting_table"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=GhastTear] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:ghast_tear"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=MagmaCream] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:magma_cream"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EndCrystal] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:end_crystal"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=PillagerBanner] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:white_banner",tag:{BlockEntityTag:{Patterns:[{Color:9,Pattern:"mr"},{Color:8,Pattern:"bs"},{Color:7,Pattern:"cs"},{Color:8,Pattern:"bo"},{Color:15,Pattern:"ms"},{Color:8,Pattern:"hh"},{Color:8,Pattern:"mc"},{Color:15,Pattern:"bo"}]}}},OnGround:1b}] add Accepted
+
+execute if entity @e[tag=Current,tag=BannerPattern] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:flower_banner_pattern"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=BannerPattern] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:creeper_banner_pattern"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=BannerPattern] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:skull_banner_pattern"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=BannerPattern] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:mojang_banner_pattern"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=BannerPattern] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:globe_banner_pattern"},OnGround:1b}] add Accepted
+
 execute if entity @e[tag=Current,tag=DragonsBreath] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:dragon_breath"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=XPBottle] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:experience_bottle"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=ChorusFruit] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:chorus_fruit"},OnGround:1b}] add Accepted
@@ -124,6 +134,7 @@ execute if entity @e[tag=Current,tag=WitherSkull] at @e[tag=Main] run tag @e[typ
 execute if entity @e[tag=Current,tag=Sponge] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:sponge"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=NetherStar] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:nether_star"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=TotemOfUndying] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:totem_of_undying"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=WitherRose] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:wither_rose"},OnGround:1b}] add Accepted
 
 tag @e[tag=Accepted,tag=!chosen,tag=!servants,tag=!fallen,tag=!devout,tag=!clergy,tag=!collectors,tag=!forsaken,tag=!believers] remove Accepted
 

@@ -50,7 +50,7 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Fern,A],CustomName:"\"Fern\"
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,MushroomStew,A],CustomName:"\"Mushroom Stew\"",Duration: 2147483647}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Bread,A],CustomName:"\"Bread\"",Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Bread,A,SamePlural],CustomName:"\"Bread\"",Duration: 2147483647}
 function praise:assignid
 
 scoreboard players set @e[tag=T2] Target 2
@@ -166,6 +166,8 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Saddle,A],CustomName:"\"Sad
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Cookie,A],CustomName:"\"Cookie\"",Duration: 2147483647}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Bamboo,A,SamePlural],CustomName:"\"Bamboo\"",Duration: 2147483647}
+function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,HeartOfTheSea,A],CustomName:"\"Heart of the Sea\"",Duration: 2147483647}
 function praise:assignid
 scoreboard players set @e[tag=HeartOfTheSea] ItemId 4
@@ -181,6 +183,8 @@ function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,AwkwardPotion,An],CustomName:"\"Awkward Potion\"",Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Obsidian,SamePlural,An],CustomName:"\"Obsidian\"",Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Bell,A],CustomName:"\"Bell\"",Duration: 2147483647}
 function praise:assignid
 
 scoreboard players set @e[tag=T100] Target 100
@@ -200,6 +204,10 @@ function praise:assignid
 scoreboard players set @e[tag=T200] Target 200
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,EndCrystal,An],CustomName:"\"End Crystal\"",Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,PillagerBanner,A],CustomName:"\"Pillager Banner\"",Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,BannerPattern,A],CustomName:"\"Banner Pattern\"",Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,DragonsBreath,SamePlural,A],CustomName:"\"Dragon’s Breath\"",Duration: 2147483647}
 function praise:assignid
@@ -240,6 +248,8 @@ scoreboard players set @e[tag=TotemOfUndying] ItemId 5
 summon area_effect_cloud ~ 1 ~ {Tags:[TotemPlural,SamePlural],CustomName:"\"Totems of Undying\"",Duration: 2147483647}
 scoreboard players set @e[tag=TotemPlural] ItemId 5
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,NetherStar,A],CustomName:"\"Nether Star\"",Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,WitherRose,A],CustomName:"\"Wither Rose\"",Duration: 2147483647}
 function praise:assignid
 
 scoreboard players set @e[tag=T8000] Target 8000

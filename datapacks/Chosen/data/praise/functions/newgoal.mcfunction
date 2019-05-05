@@ -42,9 +42,9 @@ scoreboard players add $Main Day 1
 scoreboard players operation Day Stats = $Main Day
 
 # Stat for successful sacrifices
-scoreboard players operation Sacrifices Stats = Day Stats
-scoreboard players operation Sacrifices Stats -= 1 Const
-scoreboard players operation Sacrifices Stats -= $Main Failures
+#scoreboard players operation Sacrifices Stats = Day Stats
+#scoreboard players operation Sacrifices Stats -= 1 Const
+#scoreboard players operation Sacrifices Stats -= $Main Failures
 
 # Reduce old cooldowns, set new cooldown
 scoreboard players remove @e[scores={Cooldown=1..}] Cooldown 1
