@@ -16,6 +16,8 @@ scoreboard objectives add Day dummy "Day counter"
 scoreboard objectives add Cooldown dummy "Selection cooldown"
 scoreboard objectives add SacrificeID dummy "Unique IDs for sacrifice items"
 scoreboard objectives add DropItem minecraft.custom:minecraft.drop "Items Dropped"
+scoreboard objectives add Health health "Health"
+scoreboard objectives setdisplay list Health
 
 # Set up constants
 
