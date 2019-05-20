@@ -47,5 +47,5 @@ execute if entity @p[gamemode=survival] run scoreboard players operation Score S
 
 # Prevent player from sleeping
 
-tellraw @a[nbt={Sleeping:1b}] [{"text":"The Gods' Chosen do not sleep","color":"red"}]
-execute as @a[nbt={Sleeping:1b}] at @s run setblock ~ ~ ~ air destroy
+tellraw @a[nbt={SleepTimer:1s}] [{"text":"The Gods' Chosen do not sleep!","color":"red", "italic": true}]
+execute as @a[nbt={SleepTimer:50s}] at @s run setblock ~ ~ ~ air destroy
