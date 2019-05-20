@@ -22,6 +22,11 @@ execute unless score $Border Calc matches 100 run worldborder center ~ ~
 execute unless score $Border Calc matches 100 run worldborder set 100
 gamemode adventure @a[gamemode=!adventure,name=!slicedlime]
 
+# Player griefing fixup
+
+effect give @a minecraft:weakness 1 100 true
+effect give @a minecraft:mining_fatigue 1 100 true
+
 # Team setup
 team add chosen "The Chosen Ones"
 team modify chosen color gold
