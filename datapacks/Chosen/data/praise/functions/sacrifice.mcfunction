@@ -112,6 +112,7 @@ execute if entity @e[tag=Current,tag=Bell] at @e[tag=Main] run tag @e[type=item,
 execute if entity @e[tag=Current,tag=EnchantedBook] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:enchanted_book"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EnchantingTable] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:enchanting_table"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=GhastTear] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:ghast_tear"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=HoneyComb] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:honeycomb"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=MagmaCream] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:magma_cream"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EndCrystal] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:end_crystal"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=PillagerBanner] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:white_banner",tag:{BlockEntityTag:{Patterns:[{Color:9,Pattern:"mr"},{Color:8,Pattern:"bs"},{Color:7,Pattern:"cs"},{Color:8,Pattern:"bo"},{Color:15,Pattern:"ms"},{Color:8,Pattern:"hh"},{Color:8,Pattern:"mc"},{Color:15,Pattern:"bo"}]}}},OnGround:1b}] add Accepted

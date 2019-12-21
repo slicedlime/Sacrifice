@@ -15,3 +15,4 @@ replaceitem entity @a[scores={Failures=2}] armor.head minecraft:chainmail_helmet
 replaceitem entity @a[scores={Failures=3}] armor.head minecraft:chainmail_helmet{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"}],display:{Name:"{\"translate\":\"Circlet of the Gods\"}",Lore:['"Playing games with us will"', '"cost your heart and soul."']},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-12,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
 replaceitem entity @a[scores={Failures=4}] armor.head minecraft:chainmail_helmet{Enchantments:[{lvl:1s,id:"minecraft:binding_curse"}],display:{Name:"{\"translate\":\"Circlet of the Gods\"}",Lore:['"Wrath of the Gods"', '"be upon you."']},AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-16,Operation:0,UUIDMost:12763,UUIDLeast:129863786}],Unbreakable:1b,HideFlags:63}
 kill @a[scores={Failures=5},gamemode=survival]
+
