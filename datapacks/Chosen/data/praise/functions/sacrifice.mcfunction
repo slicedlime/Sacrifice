@@ -1,6 +1,7 @@
 # Check for an appropriate sacrifice
 
 execute if entity @e[tag=Current,tag=Apple] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:apple"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=TargetBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:target"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=CoalBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:coal_block"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=IronIngot] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:iron_ingot"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Leather] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:leather"},OnGround:1b}] add Accepted
@@ -80,6 +81,8 @@ execute if entity @e[tag=Current,tag=Emerald] at @e[tag=Main] run tag @e[type=it
 execute if entity @e[tag=Current,tag=Cake] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:cake"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Anvil] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:anvil"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=BlazeRod] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:blaze_rod"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=GildedBlackstone] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:gilded_blackstone"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=Shroomlight] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:shroomlight"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Prismarine] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:prismarine_crystals"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Diamond] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:diamond"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Jukebox] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:jukebox"},OnGround:1b}] add Accepted
@@ -108,6 +111,7 @@ execute if entity @e[tag=Current,tag=HeartOfTheSea] at @e[tag=Main] run tag @e[t
 
 execute if entity @e[tag=Current,tag=AwkwardPotion] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:potion",tag:{Potion:"minecraft:awkward"}},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Obsidian] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:obsidian"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=CryingObsidian] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:crying_obsidian"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Bell] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:bell"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EnchantedBook] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:enchanted_book"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=EnchantingTable] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:enchanting_table"},OnGround:1b}] add Accepted
@@ -135,6 +139,7 @@ execute if entity @e[tag=Current,tag=Sponge] at @e[tag=Main] run tag @e[type=ite
 execute if entity @e[tag=Current,tag=NetherStar] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:nether_star"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=TotemOfUndying] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:totem_of_undying"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=WitherRose] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:wither_rose"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=NetheriteIngot] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:netherite_ingot"},OnGround:1b}] add Accepted
 
 tag @e[tag=Accepted,tag=!chosen,tag=!servants,tag=!fallen,tag=!devout,tag=!clergy,tag=!collectors,tag=!forsaken,tag=!believers] remove Accepted
 

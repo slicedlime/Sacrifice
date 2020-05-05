@@ -99,6 +99,8 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,Cake,A],CustomName:'"Cake"'
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,TNT,A],CustomName:'"TNT Block"',Duration: 2147483647}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,TargetBlock,A],CustomName:'"Target"',Duration: 2147483647}
+function praise:assignid
 
 scoreboard players set @e[tag=T15] Target 15
 
@@ -121,18 +123,19 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,GlisteringMelon,A],CustomNa
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,Slimeball,A],CustomName:'"Slimeball"',Duration: 2147483647}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,BannerPattern,A],CustomName:'"Banner Pattern"',Duration: 2147483647}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,FireCharge,A,UniquePlural],CustomName:'"Fire Charge"',Duration: 2147483647}
+function praise:assignid
+scoreboard players set @e[tag=FireCharge] ItemId 8
+summon area_effect_cloud ~ 1 ~ {Tags:[FireChargePlural,SamePlural],CustomName:'"Fire Charges"',Duration: 2147483647}
+scoreboard players set @e[tag=FireChargePlural] ItemId 8
 
 scoreboard players set @e[tag=T30] Target 30
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Anvil,An],CustomName:'"Anvil"',Duration: 2147483647}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,BlazeRod,A],CustomName:'"Blaze Rod"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,FireCharge,A,UniquePlural],CustomName:'"Fire Charge"',Duration: 2147483647}
-function praise:assignid
-scoreboard players set @e[tag=FireCharge] ItemId 8
-summon area_effect_cloud ~ 1 ~ {Tags:[FireChargePlural,SamePlural],CustomName:'"Fire Charges"',Duration: 2147483647}
-scoreboard players set @e[tag=FireChargePlural] ItemId 8
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Diamond,A],CustomName:'"Diamond"',Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Jukebox,A,UniquePlural],CustomName:'"Jukebox"',Duration: 2147483647}
@@ -144,44 +147,53 @@ scoreboard players set @e[tag=JukeboxPlural] ItemId 7
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,RabbitStew,A],CustomName:'"Rabbit Stew"',Duration: 2147483647}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,NautilusShell,A],CustomName:'"Nautilus Shell"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,NetherWartBlock,A],CustomName:'"Nether Wart Block"',Duration: 2147483647}
-function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,MusicDisc,A],CustomName:'"Music Disc"',Duration: 2147483647}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,PoisonousPotato,A,UniquePlural],CustomName:'"Poisonous Potato"',Duration: 2147483647}
+scoreboard players set @e[tag=T40] Target 40
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,NautilusShell,A],CustomName:'"Nautilus Shell"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,BlazeRod,A],CustomName:'"Blaze Rod"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,GildedBlackstone,A,SamePlural],CustomName:'"Gilded Blackstone"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Obsidian,SamePlural,An],CustomName:'"Obsidian"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Shroomlight,A],CustomName:'"Shroomlight"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Saddle,A],CustomName:'"Saddle"',Duration: 2147483647}
+function praise:assignid
+
+scoreboard players set @e[tag=T60] Target 60
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,Cookie,A],CustomName:'"Cookie"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,Bamboo,A,SamePlural],CustomName:'"Bamboo"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,HeartOfTheSea,A],CustomName:'"Heart of the Sea"',Duration: 2147483647}
+function praise:assignid
+scoreboard players set @e[tag=HeartOfTheSea] ItemId 4
+summon area_effect_cloud ~ 1 ~ {Tags:[HeartOfTheSeaPlural,SamePlural],CustomName:'"Hearts of the Sea"',Duration: 2147483647}
+scoreboard players set @e[tag=HeartOfTheSeaPlural] ItemId 4
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,Prismarine,A],CustomName:'"Prismarine Crystal"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,HoneyComb,A],CustomName:'"Honey Comb"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,CryingObsidian,SamePlural,A],CustomName:'"Crying Obsidian"',Duration: 2147483647}
+function praise:assignid
+
+scoreboard players set @e[tag=T75] Target 75
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,PoisonousPotato,A,UniquePlural],CustomName:'"Poisonous Potato"',Duration: 2147483647}
 function praise:assignid
 scoreboard players set @e[tag=PoisonousPotato] ItemId 6
 summon area_effect_cloud ~ 1 ~ {Tags:[PPotatoPlural,SamePlural],CustomName:'"Poisonous Potatoes"',Duration: 2147483647}
 scoreboard players set @e[tag=PPotatoPlural] ItemId 6
 
-scoreboard players set @e[tag=T40] Target 40
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Saddle,A],CustomName:'"Saddle"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Cookie,A],CustomName:'"Cookie"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Bamboo,A,SamePlural],CustomName:'"Bamboo"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,HeartOfTheSea,A],CustomName:'"Heart of the Sea"',Duration: 2147483647}
-function praise:assignid
-scoreboard players set @e[tag=HeartOfTheSea] ItemId 4
-summon area_effect_cloud ~ 1 ~ {Tags:[HeartOfTheSeaPlural,SamePlural],CustomName:'"Hearts of the Sea"',Duration: 2147483647}
-scoreboard players set @e[tag=HeartOfTheSeaPlural] ItemId 4
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Prismarine,A],CustomName:'"Prismarine Crystal"',Duration: 2147483647}
-function praise:assignid
-
-scoreboard players set @e[tag=T60] Target 60
-
-scoreboard players set @e[tag=T75] Target 75
-
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Nametag,A],CustomName:'"Nametag"',Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,AwkwardPotion,An],CustomName:'"Awkward Potion"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Obsidian,SamePlural,An],CustomName:'"Obsidian"',Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Bell,A],CustomName:'"Bell"',Duration: 2147483647}
 function praise:assignid
@@ -190,16 +202,14 @@ scoreboard players set @e[tag=T100] Target 100
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T150,EnchantedBook,An],CustomName:'"Enchanted Book"',Duration: 2147483647}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T150,MagmaCream,A],CustomName:'"Magma Cream"',Duration: 2147483647}
+function praise:assignid
 
 scoreboard players set @e[tag=T150] Target 150
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T200,EnchantingTable,An],CustomName:'"Enchanting Table"',Duration: 2147483647}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T200,HoneyComb,A],CustomName:'"Honey Comb"',Duration: 2147483647}
-function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T200,GhastTear,A],CustomName:'"Ghast Tear"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T200,MagmaCream,A],CustomName:'"Magma Cream"',Duration: 2147483647}
 function praise:assignid
 
 scoreboard players set @e[tag=T200] Target 200
@@ -207,8 +217,6 @@ scoreboard players set @e[tag=T200] Target 200
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,EndCrystal,An],CustomName:'"End Crystal"',Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,PillagerBanner,A],CustomName:'"Pillager Banner"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,BannerPattern,A],CustomName:'"Banner Pattern"',Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,DragonsBreath,SamePlural,A],CustomName:'"Dragon’s Breath"',Duration: 2147483647}
 function praise:assignid
@@ -229,6 +237,8 @@ scoreboard players set @e[tag=T600] Target 600
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1000,ShulkerShell,A],CustomName:'"Shulker Shell"',Duration: 2147483647}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1000,WitherSkull,A],CustomName:'"Wither Skull"',Duration: 2147483647}
+function praise:assignid
 
 scoreboard players set @e[tag=T1000] Target 1000
 
@@ -236,21 +246,21 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,DragonHead,A],CustomName:
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,Elytra,SamePlural,An],CustomName:'"Elytra"',Duration: 2147483647}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,WitherSkull,A],CustomName:'"Wither Skull"',Duration: 2147483647}
-function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,Sponge,A],CustomName:'"Sponge"',Duration: 2147483647}
 function praise:assignid
-
-scoreboard players set @e[tag=T2000] Target 2000
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,TotemOfUndying,UniquePlural,A],CustomName:'"Totem of Undying"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,TotemOfUndying,UniquePlural,A],CustomName:'"Totem of Undying"',Duration: 2147483647}
 function praise:assignid
 scoreboard players set @e[tag=TotemOfUndying] ItemId 5
 summon area_effect_cloud ~ 1 ~ {Tags:[TotemPlural,SamePlural],CustomName:'"Totems of Undying"',Duration: 2147483647}
 scoreboard players set @e[tag=TotemPlural] ItemId 5
+
+scoreboard players set @e[tag=T2000] Target 2000
+
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,NetherStar,A],CustomName:'"Nether Star"',Duration: 2147483647}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,WitherRose,A],CustomName:'"Wither Rose"',Duration: 2147483647}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,NetheriteIngot,A],CustomName:'"Netherite Ingot"',Duration: 2147483647}
 function praise:assignid
 
 scoreboard players set @e[tag=T8000] Target 8000
