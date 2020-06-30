@@ -8,17 +8,18 @@ execute as @e[tag=Team,scores={Sacrifice=1..}] run function praise:failteam
 function praise:failure
 
 # Increase difficulty
-execute unless entity @e[scores={Sacrifice=1..},tag=Team] run function praise:add_difficulty
+execute unless entity @e[scores={Sacrifice=1..},tag=Team] if score $Main Day matches 1.. run function praise:add_difficulty
 
 # Calculate item amounts
 execute as @e[tag=Target] run scoreboard players operation @s Sacrifice = $Main Sacrifice
-execute as @e[tag=Target] run scoreboard players operation @s Sacrifice /= @s Target
+execute as @e[tag=Target] run scoreboard players operation @s Sacrifice *= 100 Const
+execute as @e[tag=Target] run scoreboard players operation @s Sacrifice -= @s BaseCost
+execute as @e[tag=Target] run scoreboard players operation @s Sacrifice /= @s RepeatCost
+execute as @e[tag=Target] run scoreboard players add @s Sacrifice 1
 
 # Clear out items of invalid counts
 scoreboard players reset @e[tag=Target,scores={Sacrifice=..0}] Sacrifice
-execute if score $Main Sacrifice matches ..5000 run scoreboard players reset @e[tag=Target,scores={Sacrifice=6..}] Sacrifice
-# At the end game, allow up to 10 instead
-execute if score $Main Sacrifice matches 5001.. run scoreboard players reset @e[tag=Target,scores={Sacrifice=11..}] Sacrifice
+scoreboard players reset @e[tag=Target,scores={Sacrifice=5..}] Sacrifice
 
 # Make sure they all have a cooldown value
 scoreboard players add @e[tag=Target] Cooldown 0

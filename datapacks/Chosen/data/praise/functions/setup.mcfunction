@@ -26,6 +26,7 @@ clear @a
 
 worldborder set 60000000
 
+function praise:setupdifficulty
 function praise:setupteams
 function praise:setuptargets
 

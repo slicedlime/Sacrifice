@@ -12,9 +12,15 @@ scoreboard objectives add SacrificeRules dummy "Sacrifice Rules ticker"
 scoreboard objectives add Seed trigger "Sacrifice Seed Trigger"
 scoreboard objectives add Registry dummy "Math Registry"
 scoreboard objectives add Calc dummy "Calculation scoreboard"
+scoreboard objectives add Settings dummy "Settings scoreboard"
 
 scoreboard players enable @a SacrificeMenu
 scoreboard players enable @a Seed
+
+# Set default settings
+scoreboard players add $Difficulty Settings 0
+execute if score $Difficulty Settings matches 0 run scoreboard players set $Difficulty Settings 3
+function praise:set_difficulty
 
 # World border
 execute store result score $Border Calc run worldborder get
@@ -68,6 +74,7 @@ execute as @a[scores={SacrificeMenu=1}] run function praise:rules
 execute as @a[scores={SacrificeMenu=2}] run function praise:placealtar
 execute as @a[scores={SacrificeMenu=3}] at @s run function praise:setup
 execute as @a[scores={SacrificeMenu=4}] run function praise:teammenu
+execute as @a[scores={SacrificeMenu=5}] run function praise:cycle_difficulty
 
 # Team join actions
 

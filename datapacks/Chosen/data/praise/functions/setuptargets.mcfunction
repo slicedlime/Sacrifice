@@ -1,268 +1,246 @@
 # Set up target values
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,CoalBlock,A],CustomName:'"Coal Block"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CoalBlock,A],CustomName:'"Coal Block"',Duration: 2147483647,Owner:[I;100,75,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,IronIngot,An],CustomName:'"Iron Ingot"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Leather,SamePlural,A],CustomName:'"Leather"',Duration: 2147483647,Owner:[I;100,75,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,Leather,SamePlural,A],CustomName:'"Leather"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Feather,A],CustomName:'"Feather"',Duration: 2147483647,Owner:[I;100,75,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,Feather,A],CustomName:'"Feather"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,BrickBlock,A],CustomName:'"Brick Block"',Duration: 2147483647,Owner:[I;100,75,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,BrickBlock,A],CustomName:'"Brick Block"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CookedBeef,A],CustomName:'"Steak"',Duration: 2147483647,Owner:[I;100,75,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,Leaf,UniquePlural,A],CustomName:'"Leaf"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CookedPorkchop,A],CustomName:'"Cooked Porkchop"',Duration: 2147483647,Owner:[I;100,75,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CookedMutton,A],CustomName:'"Cooked Mutton"',Duration: 2147483647,Owner:[I;100,75,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CookedChicken,A],CustomName:'"Cooked Chicken"',Duration: 2147483647,Owner:[I;100,75,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Apple,An],CustomName:'"Apple"',Duration: 2147483647,Owner:[I;100,75,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,IronIngot,An],CustomName:'"Iron Ingot"',Duration: 2147483647,Owner:[I;100,25,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Leaf,UniquePlural,A],CustomName:'"Leaf"',Duration: 2147483647,Owner:[I;150,75,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=Leaf] ItemId 1
 summon area_effect_cloud ~ 1 ~ {Tags:[LeafPlural,SamePlural],CustomName:'"Leaves"',Duration: 2147483647}
 scoreboard players set @e[tag=LeafPlural] ItemId 1
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,CookedBeef,A],CustomName:'"Steak"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,CookedPorkchop,A],CustomName:'"Cooked Porkchop"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,CookedMutton,A],CustomName:'"Cooked Mutton"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,CookedChicken,A],CustomName:'"Cooked Chicken"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,FlowerPot,A],CustomName:'"Flower Pot"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,GlassBottle,A],CustomName:'"Glass Bottle"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1,SeaGrass,A,SamePlural],CustomName:'"Sea Grass"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,SeaGrass,A,SamePlural],CustomName:'"Sea Grass"',Duration: 2147483647,Owner:[I;150,75,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T1] Target 1
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Bone,A],CustomName:'"Bone"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,RottenFlesh,SamePlural,A],CustomName:'"Rotten Flesh"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Gunpowder,A],CustomName:'"Gunpowder"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,String,A],CustomName:'"String"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Apple,An],CustomName:'"Apple"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,BlackWool,A],CustomName:'"Black Wool Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Bed,A],CustomName:'"Bed"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Fern,A],CustomName:'"Fern"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,MushroomStew,A],CustomName:'"Mushroom Stew"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2,Bread,A,SamePlural],CustomName:'"Bread"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FlowerPot,A],CustomName:'"Flower Pot"',Duration: 2147483647,Owner:[I;75,50,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T2] Target 2
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,LavaBucket,A],CustomName:'"Lava Bucket"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bone,A],CustomName:'"Bone"',Duration: 2147483647,Owner:[I;200,150,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,FishBucket,A,UniquePlural],CustomName:'"Bucket of Fish"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,RottenFlesh,SamePlural,A],CustomName:'"Rotten Flesh"',Duration: 2147483647,Owner:[I;200,150,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,String,A],CustomName:'"String"',Duration: 2147483647,Owner:[I;200,150,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Gunpowder,A],CustomName:'"Gunpowder"',Duration: 2147483647,Owner:[I;300,200,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,BlackWool,A],CustomName:'"Black Wool Block"',Duration: 2147483647,Owner:[I;200,100,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bed,A],CustomName:'"Bed"',Duration: 2147483647,Owner:[I;200,100,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bread,A,SamePlural],CustomName:'"Bread"',Duration: 2147483647,Owner:[I;200,100,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,MushroomStew,A],CustomName:'"Mushroom Stew"',Duration: 2147483647,Owner:[I;400,200,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FishBucket,A,UniquePlural],CustomName:'"Bucket of Fish"',Duration: 2147483647,Owner:[I;400,200,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=FishBucket] ItemId 3
 summon area_effect_cloud ~ 1 ~ {Tags:[FishBucketPlural,SamePlural],CustomName:'"Buckets of Fish"',Duration: 2147483647}
 scoreboard players set @e[tag=FishBucketPlural] ItemId 3
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,PumpkinPie,A],CustomName:'"Pumpkin Pie"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,GoldIngot,A],CustomName:'"Gold Ingot"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,SnowBlock,A],CustomName:'"Snow Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,BookAndQuill,A],CustomName:'"Writable Book"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T5,FireworkRocket,A],CustomName:'"Firework Rocket"',Duration: 2147483647}
-function praise:assignid
-scoreboard players set @e[tag=T5] Target 5
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T10,Bookshelf,UniquePlural,A],CustomName:'"Bookshelf"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,LavaBucket,A],CustomName:'"Lava Bucket"',Duration: 2147483647,Owner:[I;600,200,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,PumpkinPie,A],CustomName:'"Pumpkin Pie"',Duration: 2147483647,Owner:[I;500,500,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,BookAndQuill,A],CustomName:'"Writable Book"',Duration: 2147483647,Owner:[I;500,500,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GoldIngot,A],CustomName:'"Gold Ingot"',Duration: 2147483647,Owner:[I;500,150,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FireworkRocket,A],CustomName:'"Firework Rocket"',Duration: 2147483647,Owner:[I;400,100,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,RedstoneBlock,A],CustomName:'"Redstone Block"',Duration: 2147483647,Owner:[I;400,100,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bookshelf,UniquePlural,A],CustomName:'"Bookshelf"',Duration: 2147483647,Owner:[I;1000,1000,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=Bookshelf] ItemId 2
 summon area_effect_cloud ~ 1 ~ {Tags:[New,BookshelfPlural,SamePlural],CustomName:'"Bookshelves"',Duration: 2147483647}
 function praise:assignid
 scoreboard players set @e[tag=BookshelfPlural] ItemId 2
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T10,RedstoneBlock,A],CustomName:'"Redstone Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T10,FermentedEye,A],CustomName:'"Fermented Spider Eye"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T10,MagmaBlock,A],CustomName:'"Magma Block"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FermentedEye,A],CustomName:'"Fermented Spider Eye"',Duration: 2147483647,Owner:[I;1000,1000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T10] Target 10
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,QuartzBlock,A],CustomName:'"Quartz Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,GlowstoneBlock,A],CustomName:'"Glowstone Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,LapisBlock,A],CustomName:'"Lapis Lazuli Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,Cake,A],CustomName:'"Cake"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,TNT,A],CustomName:'"TNT Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T15,TargetBlock,A],CustomName:'"Target"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,MagmaBlock,A],CustomName:'"Magma Block"',Duration: 2147483647,Owner:[I;800,200,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T15] Target 15
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T20,SpectralArrow,A],CustomName:'"Spectral Arrow"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,QuartzBlock,A],CustomName:'"Quartz Block"',Duration: 2147483647,Owner:[I;1500,300,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T20,GoldenApple,A],CustomName:'"Golden Apple"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T20,GoldenCarrot,A],CustomName:'"Golden Carrot"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T20,Emerald,An],CustomName:'"Emerald"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlowstoneBlock,A],CustomName:'"Glowstone Block"',Duration: 2147483647,Owner:[I;1500,300,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T20] Target 20
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,Cobweb,A],CustomName:'"Cobweb"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,LapisBlock,A],CustomName:'"Lapis Lazuli Block"',Duration: 2147483647,Owner:[I;1500,500,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,GrassBlock,A],CustomName:'"Grass Block"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,GlisteringMelon,A],CustomName:'"Glistering Melon Slice"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,Slimeball,A],CustomName:'"Slimeball"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,BannerPattern,A],CustomName:'"Banner Pattern"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,SpectralArrow,A],CustomName:'"Spectral Arrow"',Duration: 2147483647,Owner:[I;1500,500,0,0]}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T30,FireCharge,A,UniquePlural],CustomName:'"Fire Charge"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Cake,A],CustomName:'"Cake"',Duration: 2147483647,Owner:[I;1500,1000,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,TNT,A],CustomName:'"TNT Block"',Duration: 2147483647,Owner:[I;1500,1500,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,TargetBlock,A],CustomName:'"Target"',Duration: 2147483647,Owner:[I;800,500,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GoldenApple,A],CustomName:'"Golden Apple"',Duration: 2147483647,Owner:[I;2000,1500,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GoldenCarrot,A],CustomName:'"Golden Carrot"',Duration: 2147483647,Owner:[I;2000,500,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Emerald,An],CustomName:'"Emerald"',Duration: 2147483647,Owner:[I;2000,1000,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Cobweb,A],CustomName:'"Cobweb"',Duration: 2147483647,Owner:[I;3000,500,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlisteringMelon,A],CustomName:'"Glistering Melon Slice"',Duration: 2147483647,Owner:[I;3000,500,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Obsidian,SamePlural,An],CustomName:'"Obsidian"',Duration: 2147483647,Owner:[I;3000,500,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Shroomlight,A],CustomName:'"Shroomlight"',Duration: 2147483647,Owner:[I;3000,500,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GrassBlock,A],CustomName:'"Grass Block"',Duration: 2147483647,Owner:[I;3000,3000,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Slimeball,A],CustomName:'"Slimeball"',Duration: 2147483647,Owner:[I;3000,2000,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FireCharge,A,UniquePlural],CustomName:'"Fire Charge"',Duration: 2147483647,Owner:[I;5000,3000,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=FireCharge] ItemId 8
 summon area_effect_cloud ~ 1 ~ {Tags:[FireChargePlural,SamePlural],CustomName:'"Fire Charges"',Duration: 2147483647}
 scoreboard players set @e[tag=FireChargePlural] ItemId 8
-
-scoreboard players set @e[tag=T30] Target 30
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Anvil,An],CustomName:'"Anvil"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CryingObsidian,SamePlural,A],CustomName:'"Crying Obsidian"',Duration: 2147483647,Owner:[I;5000,3000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Diamond,A],CustomName:'"Diamond"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Anvil,An],CustomName:'"Anvil"',Duration: 2147483647,Owner:[I;3000,5000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Jukebox,A,UniquePlural],CustomName:'"Jukebox"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Diamond,A],CustomName:'"Diamond"',Duration: 2147483647,Owner:[I;4000,4000,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Jukebox,A,UniquePlural],CustomName:'"Jukebox"',Duration: 2147483647,Owner:[I;4000,4000,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=Jukebox] ItemId 7
 summon area_effect_cloud ~ 1 ~ {Tags:[JukeboxPlural,SamePlural],CustomName:'"Jukeboxes"',Duration: 2147483647}
 scoreboard players set @e[tag=JukeboxPlural] ItemId 7
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,RabbitStew,A],CustomName:'"Rabbit Stew"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,MusicDisc,A],CustomName:'"Music Disc"',Duration: 2147483647,Owner:[I;4000,4000,0,0]}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,MusicDisc,A],CustomName:'"Music Disc"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,RabbitStew,A],CustomName:'"Rabbit Stew"',Duration: 2147483647,Owner:[I;4000,1000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T40] Target 40
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,NautilusShell,A],CustomName:'"Nautilus Shell"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,BlazeRod,A],CustomName:'"Blaze Rod"',Duration: 2147483647,Owner:[I;6000,2000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,BlazeRod,A],CustomName:'"Blaze Rod"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,GildedBlackstone,A,SamePlural],CustomName:'"Gilded Blackstone"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Obsidian,SamePlural,An],CustomName:'"Obsidian"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Shroomlight,A],CustomName:'"Shroomlight"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T60,Saddle,A],CustomName:'"Saddle"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GildedBlackstone,A,SamePlural],CustomName:'"Gilded Blackstone"',Duration: 2147483647,Owner:[I;6000,2000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T60] Target 60
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Saddle,A],CustomName:'"Saddle"',Duration: 2147483647,Owner:[I;6000,8000,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,HoneyBottle,A],CustomName:'"Honey Bottle"',Duration: 2147483647,Owner:[I;6000,8000,0,0]}
+function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,Cookie,A],CustomName:'"Cookie"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Cookie,A],CustomName:'"Cookie"',Duration: 2147483647,Owner:[I;10000,1500,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,Bamboo,A,SamePlural],CustomName:'"Bamboo"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bamboo,A,SamePlural],CustomName:'"Bamboo"',Duration: 2147483647,Owner:[I;10000,1500,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,HeartOfTheSea,A],CustomName:'"Heart of the Sea"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,HeartOfTheSea,A],CustomName:'"Heart of the Sea"',Duration: 2147483647,Owner:[I;7500,7500,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=HeartOfTheSea] ItemId 4
 summon area_effect_cloud ~ 1 ~ {Tags:[HeartOfTheSeaPlural,SamePlural],CustomName:'"Hearts of the Sea"',Duration: 2147483647}
 scoreboard players set @e[tag=HeartOfTheSeaPlural] ItemId 4
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,Prismarine,A],CustomName:'"Prismarine Crystal"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,HoneyComb,A],CustomName:'"Honey Comb"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T75,CryingObsidian,SamePlural,A],CustomName:'"Crying Obsidian"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Nametag,A],CustomName:'"Nametag"',Duration: 2147483647,Owner:[I;6000,3000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T75] Target 75
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,PoisonousPotato,A,UniquePlural],CustomName:'"Poisonous Potato"',Duration: 2147483647}
-function praise:assignid
-scoreboard players set @e[tag=PoisonousPotato] ItemId 6
-summon area_effect_cloud ~ 1 ~ {Tags:[PPotatoPlural,SamePlural],CustomName:'"Poisonous Potatoes"',Duration: 2147483647}
-scoreboard players set @e[tag=PPotatoPlural] ItemId 6
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Nametag,A],CustomName:'"Nametag"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,AwkwardPotion,An],CustomName:'"Awkward Potion"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T100,Bell,A],CustomName:'"Bell"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,AwkwardPotion,An],CustomName:'"Awkward Potion"',Duration: 2147483647,Owner:[I;10000,2000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T100] Target 100
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T150,EnchantedBook,An],CustomName:'"Enchanted Book"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T150,MagmaCream,A],CustomName:'"Magma Cream"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bell,A],CustomName:'"Bell"',Duration: 2147483647,Owner:[I;10000,15000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T150] Target 150
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T200,EnchantingTable,An],CustomName:'"Enchanting Table"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T200,GhastTear,A],CustomName:'"Ghast Tear"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,EnchantedBook,An],CustomName:'"Enchanted Book"',Duration: 2147483647,Owner:[I;15000,7500,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T200] Target 200
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,MagmaCream,A],CustomName:'"Magma Cream"',Duration: 2147483647,Owner:[I;15000,7500,0,0]}
+function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,EndCrystal,An],CustomName:'"End Crystal"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,EnchantingTable,An],CustomName:'"Enchanting Table"',Duration: 2147483647,Owner:[I;20000,20000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,PillagerBanner,A],CustomName:'"Pillager Banner"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GhastTear,A],CustomName:'"Ghast Tear"',Duration: 2147483647,Duration: 2147483647,Owner:[I;20000,20000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,DragonsBreath,SamePlural,A],CustomName:'"Dragon’s Breath"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,EndCrystal,An],CustomName:'"End Crystal"',Duration: 2147483647,Owner:[I;30000,25000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T400,XPBottle,UniquePlural,A],CustomName:'"Bottle of Enchanting"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,XPBottle,UniquePlural,A],CustomName:'"Bottle of Enchanting"',Duration: 2147483647,Owner:[I;30000,25000,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=XPBottle] ItemId 9
 summon area_effect_cloud ~ 1 ~ {Tags:[XPBottlePlural,SamePlural],CustomName:'"Bottles of Enchanting"',Duration: 2147483647}
 scoreboard players set @e[tag=XPBottlePlural] ItemId 9
 
-scoreboard players set @e[tag=T400] Target 400
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T600,ChorusFruit,A],CustomName:'"Chorus Fruit"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T600,EndRod,An],CustomName:'"End Rod"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,PillagerBanner,A],CustomName:'"Pillager Banner"',Duration: 2147483647,Owner:[I;40000,20000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T600] Target 600
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1000,ShulkerShell,A],CustomName:'"Shulker Shell"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T1000,WitherSkull,A],CustomName:'"Wither Skull"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,DragonsBreath,SamePlural,A],CustomName:'"Dragon’s Breath"',Duration: 2147483647,Owner:[I;40000,5000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T1000] Target 1000
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,ChorusFruit,A],CustomName:'"Chorus Fruit"',Duration: 2147483647,Owner:[I;60000,10000,0,0]}
+function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,DragonHead,A],CustomName:'"Dragon Head"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,EndRod,An],CustomName:'"End Rod"',Duration: 2147483647,Owner:[I;80000,15000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,Elytra,SamePlural,An],CustomName:'"Elytra"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,ShulkerShell,A],CustomName:'"Shulker Shell"',Duration: 2147483647,Owner:[I;100000,30000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,Sponge,A],CustomName:'"Sponge"',Duration: 2147483647}
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,WitherSkull,A],CustomName:'"Wither Skull"',Duration: 2147483647,Owner:[I;200000,200000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T2000,TotemOfUndying,UniquePlural,A],CustomName:'"Totem of Undying"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,DragonHead,A],CustomName:'"Dragon Head"',Duration: 2147483647,Owner:[I;200000,200000,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Elytra,SamePlural,An],CustomName:'"Elytra"',Duration: 2147483647,Owner:[I;200000,200000,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,NetheriteIngot,A],CustomName:'"Netherite Ingot"',Duration: 2147483647,Owner:[I;200000,200000,0,0]}
+function praise:assignid
+
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Sponge,A],CustomName:'"Sponge"',Duration: 2147483647,Owner:[I;200000,100000,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,TotemOfUndying,UniquePlural,A],CustomName:'"Totem of Undying"',Duration: 2147483647,Owner:[I;200000,100000,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=TotemOfUndying] ItemId 5
 summon area_effect_cloud ~ 1 ~ {Tags:[TotemPlural,SamePlural],CustomName:'"Totems of Undying"',Duration: 2147483647}
 scoreboard players set @e[tag=TotemPlural] ItemId 5
 
-scoreboard players set @e[tag=T2000] Target 2000
-
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,NetherStar,A],CustomName:'"Nether Star"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,WitherRose,A],CustomName:'"Wither Rose"',Duration: 2147483647}
-function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T8000,NetheriteIngot,A],CustomName:'"Netherite Ingot"',Duration: 2147483647}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,NetherStar,A],CustomName:'"Nether Star"',Duration: 2147483647,Owner:[I;600000,800000,0,0]}
 function praise:assignid
 
-scoreboard players set @e[tag=T8000] Target 8000
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,WitherRose,A],CustomName:'"Wither Rose"',Duration: 2147483647,Owner:[I;600000,200000,0,0]}
+function praise:assignid
 
 scoreboard players set @e[tag=Target] Cooldown 0
+
+execute as @e[tag=Target] store result score @s BaseCost run data get entity @s Owner[0]
+execute as @e[tag=Target] store result score @s RepeatCost run data get entity @s Owner[1]
