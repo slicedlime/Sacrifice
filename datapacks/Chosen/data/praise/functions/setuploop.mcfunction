@@ -9,6 +9,7 @@ time set noon
 scoreboard objectives add SacrificeStatus dummy "Sacrifice Status"
 scoreboard objectives add SacrificeMenu trigger "Sacrifice Menu Actions"
 scoreboard objectives add SacrificeRules dummy "Sacrifice Rules ticker"
+scoreboard objectives add SacrificeHelp dummy "Sacrifice Help ticker"
 scoreboard objectives add Seed trigger "Sacrifice Seed Trigger"
 scoreboard objectives add Registry dummy "Math Registry"
 scoreboard objectives add Calc dummy "Calculation scoreboard"
@@ -21,6 +22,11 @@ scoreboard players enable @a Seed
 scoreboard players add $Difficulty Settings 0
 execute if score $Difficulty Settings matches 0 run scoreboard players set $Difficulty Settings 3
 function praise:set_difficulty
+
+# Default mode settings
+scoreboard players add $Mode Settings 0
+execute if score $Mode Settings matches 0 run scoreboard players set $Mode Settings 1
+function praise:set_mode
 
 # World border
 execute store result score $Border Calc run worldborder get
@@ -57,8 +63,9 @@ team modify watchers color white
 scoreboard players add $rng Registry 0
 execute if score $rng Registry matches 0 run function praise:randomseed
 
-# Rules
+# Rules & help
 execute as @a[scores={SacrificeRules=0..}] run function praise:rules
+execute as @a[scores={SacrificeHelp=0..}] run function praise:help
 
 # Show menu
 scoreboard players set $Max SacrificeStatus 1200
@@ -75,6 +82,8 @@ execute as @a[scores={SacrificeMenu=2}] run function praise:placealtar
 execute as @a[scores={SacrificeMenu=3}] at @s run function praise:setup
 execute as @a[scores={SacrificeMenu=4}] run function praise:teammenu
 execute as @a[scores={SacrificeMenu=5}] run function praise:cycle_difficulty
+execute as @a[scores={SacrificeMenu=6}] run function praise:help
+execute as @a[scores={SacrificeMenu=7}] run function praise:cycle_mode
 
 # Team join actions
 
