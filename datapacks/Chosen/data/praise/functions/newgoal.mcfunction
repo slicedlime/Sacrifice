@@ -8,7 +8,8 @@ execute as @e[tag=Team,scores={Sacrifice=1..}] run function praise:failteam
 function praise:failure
 
 # Increase difficulty
-execute unless entity @e[scores={Sacrifice=1..},tag=Team] if score $Main Day matches 1.. run function praise:add_difficulty
+execute if score $Mode Settings matches 1 unless entity @e[scores={Sacrifice=1..},tag=Team] if score $Main Day matches 1.. run function praise:add_difficulty
+execute if score $Mode Settings matches 2.. if score $Main Day matches 1.. run function praise:add_difficulty
 
 # Calculate item amounts
 execute as @e[tag=Target] run scoreboard players operation @s Sacrifice = $Main Sacrifice
