@@ -15,7 +15,7 @@ execute as @e[tag=Clergy,scores={Sacrifice=1..}] run title @a[team=clergy] actio
 execute as @e[tag=Collectors,scores={Sacrifice=1..}] run title @a[team=collectors] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
 execute as @e[tag=Forsaken,scores={Sacrifice=1..}] run title @a[team=forsaken] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
 execute as @e[tag=Believers,scores={Sacrifice=1..}] run title @a[team=believers] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
-title @a[team=watchers] actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}, {"text": " per player"}]
+title @a[team=watchers] actionbar [{"score":{"objective":"Sacrifice","name":"@e[tag=Current,limit=1]"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}, {"text": " per player"}]
 
 # Put items on same team as thrower
 execute as @a[scores={DropItem=1..},team=chosen] at @s run tag @e[type=item,limit=1,distance=..2,sort=nearest] add chosen
