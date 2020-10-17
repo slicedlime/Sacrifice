@@ -23,6 +23,7 @@ effect give @a resistance 1 10 true
 gamemode survival @a[team=!watchers]
 gamemode spectator @a[team=watchers]
 clear @a
+give @a compass
 
 worldborder set 60000000
 
