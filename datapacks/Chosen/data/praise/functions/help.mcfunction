@@ -12,7 +12,7 @@ tellraw @s[scores={SacrificeHelp=300}] [{"text":"\n- "}, {"text": "Mode", "color
 
 tellraw @s[scores={SacrificeHelp=400}] [{"text":"\n  "},{"text": "Challenge", "color": "aqua"}, {"text": " mode is the default. Here the full day is available to all teams for handing in an item. If any team fails, the difficulty remains the same the next day."}]
 tellraw @s[scores={SacrificeHelp=700}] [{"text":"\n  "},{"text": "Competitive", "color": "aqua"}, {"text": " mode is like "}, {"text": "Challenge", "color": "aqua"}, {"text": " mode except the difficulty increases every day regardless of success or failure. This guarantees that the seed produces a unique string of item requests that is always the same."}]
-tellraw @s[scores={SacrificeHelp=1000}] [{"text":"\n  In "},{"text": "Elimination", "color": "aqua"}, {"text": " mode, the game is a race - only the first team to get an item sacrifice is fully spared. The second team to deliver the item takes a "}, {"text":"\u2665","color":"red"}, {"text":" maximum health penalty and everyone else takes a "}, {"text":"\u2665\u2665","color":"red"},{"text":" maximum health penalty. All teams that complete a sacrifice still get an Orb reward."}]
+tellraw @s[scores={SacrificeHelp=1000}] [{"text":"\n  In "},{"text": "Elimination", "color": "aqua"}, {"text": " mode, the game is a race - only the first team to get an item sacrifice is spared - everyone else takes a "}, {"text":"\u2665\u2665","color":"red"},{"text":" maximum health penalty."}]
 
 scoreboard players reset @s[scores={SacrificeHelp=1150}] SacrificeHelp
 scoreboard players set @s SacrificeStatus 1100
