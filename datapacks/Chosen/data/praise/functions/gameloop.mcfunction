@@ -1,8 +1,8 @@
 execute store result score $Main Time run time query daytime
 execute if score $Main Time matches 0 run function praise:newgoal
 
-execute if score $Running Info matches 1 unless entity @a[team=!DeadPlayers] run function praise:pause
-execute unless score $Running Info matches 1 if entity @a[team=!DeadPlayers] run function praise:unpause
+# There might be remaining paused entities from a previous pause, so unpause them
+execute as @e[type=!player,nbt={NoAI:1b}] run data merge entity @s {NoAI:0b}
 
 team join watchers @a[team=]
 gamemode spectator @a[team=watchers,gamemode=!spectator]
@@ -49,3 +49,7 @@ execute if entity @p[gamemode=survival] run scoreboard players operation Score S
 
 tellraw @a[nbt={SleepTimer:1s}] [{"text":"The Gods' Chosen do not sleep!","color":"red", "italic": true}]
 execute as @a[nbt={SleepTimer:50s}] at @s run setblock ~ ~ ~ air destroy
+
+# Pause trigger
+scoreboard players enable @a Pause
+execute as @a[scores={Pause=1..},limit=1] run function praise:pause

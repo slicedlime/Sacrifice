@@ -18,6 +18,8 @@ scoreboard objectives add BaseCost dummy "Target Base Cost"
 scoreboard objectives add RepeatCost dummy "Target Repeat Cost"
 scoreboard objectives add DropItem minecraft.custom:minecraft.drop "Items Dropped"
 scoreboard objectives add Health health "Health"
+scoreboard objectives add Pause trigger "Pause command"
+scoreboard objectives add Unpause trigger "Unpause command"
 scoreboard objectives setdisplay list Health
 
 # Set up constants

@@ -39,7 +39,12 @@ time set 23800
 execute at @e[tag=Main,limit=1] run teleport @a ~ ~ ~ -90 0
 kill @e[tag=Altar]
 
+scoreboard players set $Running Info 1
+
 scoreboard objectives remove SacrificeMenu
 scoreboard objectives remove SacrificeSetup
 scoreboard objectives remove SacrificeRules
 scoreboard objectives remove SacrificeHelp
+
+scoreboard players reset * Pause
+scoreboard players reset * Unpause
