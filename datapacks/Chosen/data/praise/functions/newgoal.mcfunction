@@ -4,7 +4,7 @@
 scoreboard players add @e[tag=Team] Failures 0
 execute as @e[tag=Team,scores={Sacrifice=1..}] run function praise:failteam
 
-# Update helmet
+# Update helmets
 function praise:failure
 
 # Increase difficulty
