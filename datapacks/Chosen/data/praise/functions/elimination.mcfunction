@@ -1,4 +1,5 @@
 # "Fail" a team who was not the first in elimination mode
+
 scoreboard players add @s Failures 1
 function praise:failteam_elimination
 

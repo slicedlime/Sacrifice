@@ -18,7 +18,6 @@ execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run title @a[tag=On
 execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run title @a[tag=OnTeam] subtitle [{"text":"... for now"}]
 execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run title @a[tag=OnTeam] actionbar [{"text":""}]
 execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run tellraw @a [{"text":"The Gods have accepted the sacrifices of "},{"selector":"@e[tag=CurrentTeam]"},{"text":"."}]
+execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] if score $Mode Settings matches 3 as @e[tag=Team,tag=!CurrentTeam] run function praise:elimination
 
 scoreboard players reset @e[scores={Sacrifice=..0}] Sacrifice
-
-execute if score $Mode Settings matches 3 as @e[tag=Team,tag=!CurrentTeam] run function praise:elimination
