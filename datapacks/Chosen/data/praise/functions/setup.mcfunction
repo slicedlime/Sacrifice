@@ -42,3 +42,4 @@ kill @e[tag=Altar]
 scoreboard objectives remove SacrificeMenu
 scoreboard objectives remove SacrificeSetup
 scoreboard objectives remove SacrificeRules
+scoreboard objectives remove SacrificeHelp
