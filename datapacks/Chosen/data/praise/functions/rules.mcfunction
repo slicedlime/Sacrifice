@@ -12,7 +12,7 @@ tellraw @s[scores={SacrificeRules=450}] [{"text":"\nAt dawn every day, the Gods 
 
 tellraw @s[scores={SacrificeRules=600}] [{"text":"\nAs days go on, the difficulty of these requests will increase."}]
 
-tellraw @s[scores={SacrificeRules=750}] [{"text":"\nFailing to deliver is costly - the wrath of the Gods takes away "},{"text":"\u2665\u2665","bold":true,"color":"red"},{"text":" of maximum health."}]
+tellraw @s[scores={SacrificeRules=750}] [{"text":"\nFailing to deliver is costly - the wrath of the Gods takes away "},{"text":"\u2665\u2665","color":"red"},{"text":" of maximum health."}]
 
 tellraw @s[scores={SacrificeRules=900}] [{"text":"\n"},{"text":"Chosen","color":"gold"},{"text":" is a hardcore challenge of survival - dying ends the challenge and displays your final statistics."}]
 
