@@ -5,7 +5,7 @@ execute if score $Main Time matches 0 run function praise:newgoal
 execute as @e[type=!player,nbt={NoAI:1b}] run data merge entity @s {NoAI:0b}
 
 team join watchers @a[team=]
-gamemode spectator @a[team=watchers,gamemode=!spectator]
+gamemode spectator @a[team=watchers,gamemode=!spectator,gamemode=!creative]
 
 execute as @e[tag=Chosen,scores={Sacrifice=1..}] run title @a[team=chosen] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
 execute as @e[tag=Servants,scores={Sacrifice=1..}] run title @a[team=servants] actionbar [{"score":{"objective":"Sacrifice","name":"@s"}}, {"text":" x "}, {"selector":"@e[tag=Current]"}]
