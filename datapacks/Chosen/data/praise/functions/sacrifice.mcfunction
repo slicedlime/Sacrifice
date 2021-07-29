@@ -4,12 +4,14 @@ execute if entity @e[tag=Current,tag=Apple] at @e[tag=Main] run tag @e[type=item
 execute if entity @e[tag=Current,tag=TargetBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:target"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=CoalBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:coal_block"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=IronIngot] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:iron_ingot"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=CopperIngot] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:copper_ingot"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Leather] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:leather"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Feather] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:feather"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=BrickBlock] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:bricks"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Bone] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:bone"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=RottenFlesh] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:rotten_flesh"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Gunpowder] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:gunpowder"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=GlowLichen] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:glow_lichen"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Leaf] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:oak_leaves"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Leaf] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:spruce_leaves"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Leaf] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:birch_leaves"},OnGround:1b}] add Accepted
@@ -44,6 +46,7 @@ execute if entity @e[tag=Current,tag=Bed] at @e[tag=Main] run tag @e[type=item,d
 execute if entity @e[tag=Current,tag=Bed] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:black_bed"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Fern] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:fern"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=MushroomStew] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:mushroom_stew"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=GlowInkSac] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:glow_ink_sac"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Bread] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:bread"},OnGround:1b}] add Accepted
 
 execute if entity @e[tag=Current,tag=PumpkinPie] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:pumpkin_pie"},OnGround:1b}] add Accepted

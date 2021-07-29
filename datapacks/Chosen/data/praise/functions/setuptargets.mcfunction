@@ -21,6 +21,8 @@ function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,IronIngot,An],CustomName:'"Iron Ingot"',Duration: 2147483647,Owner:[I;100,25,0,0]}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CopperIngot,A],CustomName:'"Copper Ingot"',Duration: 2147483647,Owner:[I;100,25,0,0]}
+function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Leaf,UniquePlural,A],CustomName:'"Leaf"',Duration: 2147483647,Owner:[I;150,75,0,0]}
 function praise:assignid
@@ -42,6 +44,8 @@ function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Gunpowder,A],CustomName:'"Gunpowder"',Duration: 2147483647,Owner:[I;300,200,0,0]}
 function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlowLichen,A],CustomName:'"Glow Lichen"',Duration: 2147483647,Owner:[I;300,200,0,0]}
+function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,BlackWool,A],CustomName:'"Black Wool Block"',Duration: 2147483647,Owner:[I;200,100,0,0]}
 function praise:assignid
@@ -51,6 +55,8 @@ summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bread,A,SamePlural],CustomName:
 function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,MushroomStew,A],CustomName:'"Mushroom Stew"',Duration: 2147483647,Owner:[I;400,200,0,0]}
+function praise:assignid
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlowInkSac,A],CustomName:'"Glow Ink Sac"',Duration: 2147483647,Owner:[I;400,200,0,0]}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FishBucket,A,UniquePlural],CustomName:'"Bucket of Fish"',Duration: 2147483647,Owner:[I;400,200,0,0]}
 function praise:assignid
