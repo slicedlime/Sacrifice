@@ -137,7 +137,7 @@ scoreboard players set @e[tag=FireChargePlural] ItemId 8
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CryingObsidian,SamePlural,A],CustomName:'"Crying Obsidian"',Duration: 2147483647,Owner:[I;5000,3000,0,0]}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,T40,Anvil,An],CustomName:'"Anvil"',Duration: 2147483647,Owner:[I;3000,5000,0,0]}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Anvil,An],CustomName:'"Anvil"',Duration: 2147483647,Owner:[I;3000,5000,0,0]}
 function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Diamond,A],CustomName:'"Diamond"',Duration: 2147483647,Owner:[I;4000,4000,0,0]}
