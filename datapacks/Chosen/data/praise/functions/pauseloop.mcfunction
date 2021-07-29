@@ -4,6 +4,7 @@ execute as @e[type=!player] run data merge entity @s {NoAI:1b}
 
 effect give @a[gamemode=survival] slowness 10 100
 effect give @a[gamemode=survival] blindness 10 2
+effect give @a[gamemode=survival] jump_boost 10 128
 
 title @a times 0 100 0
 title @a title ""
