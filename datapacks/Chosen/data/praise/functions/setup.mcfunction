@@ -26,7 +26,7 @@ gamemode spectator @a[team=watchers]
 clear @a
 give @a compass
 
-worldborder set 60000000
+worldborder set 59999900
 
 function praise:setupdifficulty
 function praise:setupteams
