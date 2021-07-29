@@ -13,6 +13,7 @@ gamerule maxCommandChainLength 100000
 
 execute if entity @e[tag=Altar] at @e[tag=Altar] align xyz run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Tags:[Main],CustomName:"\"Main\"",Duration: 2147483647}
 execute unless entity @e[tag=Altar] align xyz run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Tags:[Main],CustomName:"\"Main\"",Duration: 2147483647}
+scoreboard players set Mode SacrificeMode 1
 
 execute as @e[tag=Main] at @s run setworldspawn ~ ~ ~
 execute as @e[tag=Main] at @s run function praise:altar
