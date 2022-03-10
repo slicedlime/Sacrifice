@@ -56,7 +56,7 @@ function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,MushroomStew,A],CustomName:'"Mushroom Stew"',Duration: 2147483647,Owner:[I;400,200,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlowInkSac,A],CustomName:'"Glow Ink Sac"',Duration: 2147483647,Owner:[I;400,200,0,0]}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlowInkSac,A],CustomName:'"Glow Ink Sac"',Duration: 2147483647,Owner:[I;800,200,0,0]}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FishBucket,A,UniquePlural],CustomName:'"Bucket of Fish"',Duration: 2147483647,Owner:[I;400,200,0,0]}
 function praise:assignid
