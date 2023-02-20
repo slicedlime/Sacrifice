@@ -1,0 +1,1 @@
+- Add support for newer music discs to music disc request

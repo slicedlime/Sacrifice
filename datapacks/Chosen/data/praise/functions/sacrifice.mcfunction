@@ -105,6 +105,9 @@ execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=
 execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:music_disc_ward"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:music_disc_11"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:music_disc_wait"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:music_disc_otherside"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:music_disc_5"},OnGround:1b}] add Accepted
+execute if entity @e[tag=Current,tag=MusicDisc] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:music_disc_pigstep"},OnGround:1b}] add Accepted
 
 execute if entity @e[tag=Current,tag=Nametag] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:name_tag"},OnGround:1b}] add Accepted
 execute if entity @e[tag=Current,tag=Saddle] at @e[tag=Main] run tag @e[type=item,distance=..2,nbt={Item:{id:"minecraft:saddle"},OnGround:1b}] add Accepted
