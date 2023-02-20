@@ -1,11 +1,11 @@
 # Display a startup menu
 
 tellraw @s ["\n"]
-tellraw @s [{"text":"Welcome to "},{"text":"Chosen","color":"gold"},{"text":" version "},{"text":"1.5","color":"gold"},{"text":" by "},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
+tellraw @s [{"text":"Welcome to "},{"text":"Chosen","color":"gold"},{"text":" version "},{"text":"1.6","color":"gold"},{"text":" by "},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
 tellraw @s [""]
 tellraw @s ["Game options:"]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Game Rules", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 1"}},{"text":"]","color":"gold", "bold": true}]
-tellraw @s [{"text": "- "},{"text":"[","color":"gold","bold": true},{"text":"Settings Help", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 6"}},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Settings Help", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 6"}},{"text":"]","color":"gold", "bold": true}]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Switch Teams", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 4"}},{"text":"]","color":"gold", "bold": true}]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Change Difficulty: ", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 5"}},{"nbt":"Difficulty", "storage":"praise:data", "color":"aqua","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 5"}},{"text":"]","color":"gold", "bold": true}]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Change Mode: ", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 5"}},{"nbt":"Mode", "storage":"praise:data", "color":"aqua","clickEvent":{"action":"run_command", "value":"/trigger SacrificeMenu set 7"}},{"text":"]","color":"gold", "bold": true}]
