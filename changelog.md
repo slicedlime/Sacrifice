@@ -1,1 +1,2 @@
+- Update to Minecraft 1.19-1.19.3
 - Add support for newer music discs to music disc request
