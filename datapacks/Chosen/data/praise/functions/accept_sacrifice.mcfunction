@@ -13,7 +13,7 @@ scoreboard players operation @s Sacrifice *= -1 Const
 
 execute store result entity @s Item.Count byte 1 run scoreboard players get @s Sacrifice
 
-execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run summon minecraft:item ~ ~2 ~ {"Item":{"id":"minecraft:ender_pearl","Count":1b,tag:{display:{Name:"{\"text\":\"Orb of Servitude\",\"color\":\"blue\"}",Lore:['"A token of recognition"']}}}}
+execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run summon minecraft:item ~ ~2 ~ {"Item":{"id":"minecraft:ender_pearl","Count":1b,tag:{display:{Name:'{"text":"Orb of Servitude","color":"blue"}',Lore:['"A token of recognition"']}}}}
 execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run title @a[tag=OnTeam] title [{"text":"The Gods are pleased"}]
 execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run title @a[tag=OnTeam] subtitle [{"text":"... for now"}]
 execute if entity @e[tag=CurrentTeam,scores={Sacrifice=..0}] run title @a[tag=OnTeam] actionbar [{"text":""}]

@@ -197,7 +197,7 @@ function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,EnchantingTable,An],CustomName:'"Enchanting Table"',Duration: 2147483647,Owner:[I;20000,20000,0,0]}
 function praise:assignid
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GhastTear,A],CustomName:'"Ghast Tear"',Duration: 2147483647,Duration: 2147483647,Owner:[I;20000,20000,0,0]}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GhastTear,A],CustomName:'"Ghast Tear"',Duration: 2147483647,Owner:[I;20000,20000,0,0]}
 function praise:assignid
 
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,EndCrystal,An],CustomName:'"End Crystal"',Duration: 2147483647,Owner:[I;30000,25000,0,0]}
