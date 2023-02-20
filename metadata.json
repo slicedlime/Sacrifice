@@ -4,5 +4,7 @@
     "CurseForge": "chosen",
     "Modrinth": "chosen",
     "PlanetMinecraft": "the-chosen-challenge",
-    "slicedlime": "chosen"
+    "slicedlime": "chosen",
+    "package": "Chosen.zip",
+    "source": "datapacks/Chosen"
 }
