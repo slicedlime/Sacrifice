@@ -1,9 +1,9 @@
 import os.path
 import json
-from zipfile import ZipFile
+import zipfile
 
 def zip(zip_filename, folder, excludes = []):
-    with ZipFile(zip_filename, 'w') as zip:
+    with zipfile.ZipFile(zip_filename, 'w', compression=zipfile.ZIP_DEFLATED) as zip:
         # Iterate over all the files in directory
         for folder_name, subfolders, filenames in os.walk(folder):
             for filename in filenames:
