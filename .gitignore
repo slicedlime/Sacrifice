@@ -1,0 +1,14 @@
+credentials.json
+advancements/
+data/
+DIM-1/
+DIM1/
+entities/
+playerdata/
+region/
+stats/
+poi/
+level.dat
+level.dat_old
+session.lock
+Chosen.zip
