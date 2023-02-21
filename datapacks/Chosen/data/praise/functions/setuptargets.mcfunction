@@ -42,7 +42,7 @@ function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,String,A],CustomName:'"String"',Duration: 2147483647,Owner:[I;200,150,0,0]}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Gunpowder,A],CustomName:'"Gunpowder"',Duration: 2147483647,Owner:[I;300,200,0,0]}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Gunpowder,A,SamePlural],CustomName:'"Gunpowder"',Duration: 2147483647,Owner:[I;300,200,0,0]}
 function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,GlowLichen,A],CustomName:'"Glow Lichen"',Duration: 2147483647,Owner:[I;300,200,0,0]}
 function praise:assignid
@@ -135,11 +135,8 @@ function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Slimeball,A],CustomName:'"Slimeball"',Duration: 2147483647,Owner:[I;3000,2000,0,0]}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FireCharge,A,UniquePlural],CustomName:'"Fire Charge"',Duration: 2147483647,Owner:[I;5000,3000,0,0]}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,FireCharge,A],CustomName:'"Fire Charge"',Duration: 2147483647,Owner:[I;5000,3000,0,0]}
 function praise:assignid
-scoreboard players set @e[tag=FireCharge] ItemId 8
-summon area_effect_cloud ~ 1 ~ {Tags:[FireChargePlural,SamePlural],CustomName:'"Fire Charges"',Duration: 2147483647}
-scoreboard players set @e[tag=FireChargePlural] ItemId 8
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,CryingObsidian,SamePlural,A],CustomName:'"Crying Obsidian"',Duration: 2147483647,Owner:[I;5000,3000,0,0]}
 function praise:assignid
 
@@ -174,7 +171,7 @@ function praise:assignid
 summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,Bamboo,A,SamePlural],CustomName:'"Bamboo"',Duration: 2147483647,Owner:[I;10000,1500,0,0]}
 function praise:assignid
 
-summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,HeartOfTheSea,A],CustomName:'"Heart of the Sea"',Duration: 2147483647,Owner:[I;7500,7500,0,0]}
+summon area_effect_cloud ~ 1 ~ {Tags:[New,Target,HeartOfTheSea,A,UniquePlural],CustomName:'"Heart of the Sea"',Duration: 2147483647,Owner:[I;7500,7500,0,0]}
 function praise:assignid
 scoreboard players set @e[tag=HeartOfTheSea] ItemId 4
 summon area_effect_cloud ~ 1 ~ {Tags:[HeartOfTheSeaPlural,SamePlural],CustomName:'"Hearts of the Sea"',Duration: 2147483647}
